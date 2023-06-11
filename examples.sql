@@ -134,3 +134,70 @@ FROM
   )
 WHERE
   wallet_balance > 0;
+
+/*
+ Standard aggregate functions:
+ * count
+ * min
+ * max
+ * sum
+ * avg
+ * any
+ * stddevPop
+ * stddevSamp
+ * varPop
+ * varSamp
+ * covarPop
+ * covarSamp
+ 
+ ClickHouse-specific aggregate functions:
+ * anyHeavy
+ * anyLast
+ * argMin
+ * argMax
+ * avgWeighted
+ * topK
+ * topKWeighted
+ * groupArray
+ * groupUniqArray
+ * groupArrayInsertAt
+ * groupArrayMovingAvg
+ * groupArrayMovingSum
+ * groupBitAnd
+ * groupBitOr
+ * groupBitXor
+ * groupBitmap
+ * groupBitmapAnd
+ * groupBitmapOr
+ * groupBitmapXor
+ * sumWithOverflow
+ * sumMap
+ * minMap
+ * maxMap
+ * skewSamp
+ * skewPop
+ * kurtSamp
+ * kurtPop
+ * uniq
+ * uniqExact
+ * uniqCombined
+ * uniqCombined64
+ * uniqHLL12
+ * quantile
+ * quantiles
+ * quantileExact
+ * quantileExactLow
+ * quantileExactHigh
+ * quantileExactWeighted
+ * quantileTiming
+ * quantileTimingWeighted
+ * quantileDeterministic
+ * quantileTDigest
+ * quantileTDigestWeighted
+ * quantileBFloat16
+ * quantileBFloat16Weighted
+ * simpleLinearRegression
+ * stochasticLinearRegression
+ * stochasticLogisticRegression
+ * categoricalInformationValue
+ */
