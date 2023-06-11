@@ -34,3 +34,32 @@ CREATE TABLE all_chains (
   data_rest VARCHAR(255),
   fees_paid DECIMAL(78, 0)
 );
+
+/*
+ Here are the key components of the "all_chains" table:
+ 
+ Transaction Data Columns:
+ tx_hash: Unique identifier for each transaction.
+ successful: Indicates whether a transaction failed or succeeded.
+ tx_sender: Stores the wallet address that initiated the transaction.
+ tx_recipient: Stores the recipient of the transaction.
+ tx_creates: Stores the contract created in a Contract Creation transaction.
+ tx_value: Stores the amount of native token used in the transaction.
+ tx_gas_offered: The maximum amount of gas a transaction can use.
+ tx_gas_spent: The total amount of gas units used in the transaction.
+ tx_gas_price: The cost of one gas unit.
+ signed_at: Timestamp showing the date the transaction was successful.
+ 
+ Log Event Data Columns:
+ log_emitter: Stores the smart contract emitting the log event.
+ topic0 - topic3: These fields display the stakeholders in the event.
+ data0 - data3: Stores critical information like addresses and token amounts.
+ data_rest: Holds all the data outside data0-data3.
+ 
+ Block Data Columns:
+ block_height: Block height refers to the current number block in a blockchain.
+ block_gas_used: The total amount of gas units used by the block.
+ block_gas_limit: The maximum amount of gas a block can use.
+ block_hash: Unique identifier for each block.
+ block_parent_hash: All the blocks are chained together by adding the previous block's hash to the next block's header.
+ */
