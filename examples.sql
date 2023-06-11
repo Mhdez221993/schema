@@ -52,3 +52,23 @@ WHERE
 GROUP BY
   date,
   chain_name;
+
+-- Metric Example: Cross Chain Deposit Volume
+SELECT
+  sum(abs(amount_in_usd)),
+  date_trunc('day', signed_at) as date,
+  chain_name
+FROM
+  reports.lending
+WHERE
+  chain_name IN (
+    'matic_mainnet',
+    'optimism_mainnet',
+    'arbitrum_mainnet',
+    'avalanche_mainnet'
+  )
+  AND signed_at > now() - interval '30 day'
+  AND event = 'deposit'
+GROUP BY
+  date,
+  chain_name;
