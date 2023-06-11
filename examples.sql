@@ -15,4 +15,22 @@ WHERE
   AND signed_at > now() - interval '30 day'
 GROUP BY
   date,
+  chain_name;
+
+-- Metric Example: Cross Chain NFT Sales Volume
+SELECT
+  sum(nft_token_price_usd) as Volume,
+  date_trunc('day', signed_at) as date,
   chain_name
+FROM
+  reports.nft_sales_v2
+WHERE
+  chain_name IN (
+    'optimism_mainnet',
+    'arbitrum_mainnet',
+    'avalanche_mainnet',
+    'eth_mainnet'
+  )
+GROUP BY
+  date,
+  chain_name;
