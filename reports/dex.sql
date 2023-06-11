@@ -50,3 +50,38 @@ CREATE TABLE dex (
   gas_eth DOUBLE,
   gas_usd DOUBLE
 );
+
+/*
+ 
+ DEX Trades Data Dictionary:
+ 
+ chain_name: Stores the chain name.
+ 
+ chain_id: A unique number that acts as a numerical identifier for each chain.
+ block_height: Stores the block height.
+ signed_at: Stores the timestamp.
+ tx_hash: Unique identifier for each transaction.
+ protocol_name: Stores the name of the DEX that facilitated the event.
+ protocol_address: Stores the contract address of the DEX that facilitated the event.
+ version: DEXs often have multiple versions - e.g Uniswap V1, V2, and V3.
+ fork: Many DEXs are a fork of an already established DEX.
+ fork_version: Gives you the version of the forked DEX.
+ aggregator_name: Stores the aggregator responsible for the event.
+ aggregator_address: Stores the contract address of the aggregator responsible for the event.
+ event: Stores the event taking place - e.g swap, add_liquidity, and remove_liquidity.
+ pair_address: Stores the address of the pair that the user interacts with.
+ token0_address: Stores the address of token0 in the specific pair.
+ token0_ticker: Stores the ticker symbol of token0 in the specific pair.
+ token1_address: Stores the address of token1 in the specific pair.
+ token1_ticker: Stores the ticker symbol of token1 in the specific pair.
+ amount0_unscaled: Stores the raw, on-chain amount of token0 involved in the event.
+ amount0: Stores the amount of token0 used in the transaction.
+ amount0_usd: Stores the USD amount of token0 used in the transaction.
+ amount1_unscaled: Stores the raw, on-chain amount of token1 involved in the event.
+ amount1: Stores the amount of token1 used in the transaction.
+ amount1_usd: Stores the USD amount of token1 used in the transaction.
+ sender: Stores the wallet address that initiated the transaction.
+ gas_eth: Stores the gas fee, denominated in ETH.
+ gas_usd: Stores the gas fee, denominated in USD.
+ 
+ */
