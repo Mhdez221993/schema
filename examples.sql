@@ -34,3 +34,21 @@ WHERE
 GROUP BY
   date,
   chain_name;
+
+-- Metric Example: Cross Chain Trading Volume
+SELECT
+  sum(abs(amount0_usd)) as Volume,
+  date_trunc('day', signed_at) as date,
+  chain_name
+FROM
+  reports.dex
+WHERE
+  chain_name IN (
+    'eth_mainnet',
+    'arbitrum_mainnet',
+    'optimism_mainnet',
+    'matic_mainnet'
+  )
+GROUP BY
+  date,
+  chain_name;
