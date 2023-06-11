@@ -72,3 +72,65 @@ WHERE
 GROUP BY
   date,
   chain_name;
+
+-- Metric Example #1: USD TVL Over Time
+SELECT
+  sum(
+    bal.balance / pow(10, prices.num_decimals) * prices.price
+  ),
+  date
+FROM
+  (
+    SELECT
+      argMax(balance, signed_at) as balance,
+      date_trunc('day', signed_at) as date,
+      contract_address
+    FROM
+      reports.balances
+    WHERE
+      chain_name = 'eth_mainnet'
+      AND signed_at > '2023-01-01'
+      AND holder_address = unhex('2a3DD3EB832aF982ec71669E178424b10Dca2EDe')
+    GROUP BY
+      date,
+      contract_address
+  ) bal
+  LEFT JOIN (
+    SELECT
+      avg(price) as price,
+      date_trunc('day', signed_at) as date,
+      token_address,
+      ticker_symbol,
+      num_decimals
+    FROM
+      reports.dex_token_price
+    WHERE
+      chain_name = 'eth_mainnet'
+      AND signed_at > '2023-01-01'
+    GROUP BY
+      token_address,
+      ticker_symbol,
+      num_decimals,
+      date
+  ) prices ON bal.contract_address = prices.token_address
+  AND bal.date = prices.date
+GROUP BY
+  date;
+
+-- Metrics Example #2: Token Holders
+SELECT
+  uniq(holder_address) as holders
+FROM
+  (
+    SELECT
+      argMax(balance, signed_at) as wallet_balance,
+      holder_address
+    FROM
+      reports.balances
+    WHERE
+      contract_address = unhex('C02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2') -- WETH Token
+    GROUP BY
+      holder_address
+  )
+WHERE
+  wallet_balance > 0;
