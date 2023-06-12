@@ -1,5 +1,26 @@
 # Models
 
+```shell
+const all_chains = ["Bitcoin", "Ethereum", "Polygon", "BNB Smart Chain (BSC)", "Avalanche C-Chain", "Fantom", "Moonbeam", "Moonriver", "Rootstock", "Arbitrum", "Palm", "Nervos Godwoken", "Axie/Ronin", "Evmos", "Astar", "Harmony", "Cronos", "Aurora", "Oasis", "Boba Ethereum", "Polygon Mumbai Testnet", "Avalanche Fuji Testnet", "Moonbeam Moonbase Alpha Testnet", "Rootstock Testnet", "Arbitrum Testnet", "Fantom Testnet", "Palm Testnet", "Nervos Godwoken Testnet", "Evmos Testnet", "Shiden", "Harmony Testnet", "Aurora Testnet", "Scroll L2 Testnet", "Scroll L1 Testnet", "DeFi Kingdoms", "Swimmer Network", "Boba Avalanche", "Boba Bobabeam", "Boba BNB", "Boba Rinkeby Testnet", "Boba Bobabase Testnet", "Boba BNB Testnet", "Boba Avalanche Testnet", "Gather", "Gather Testnet", "Optimism", "Calypso Hub", "SKALE", "Razor", "Dexalot", "CryptoBlades/Omnus", "Dexalot Testnet", "Metis", "Milkomeda A1", "Milkomeda A1 Devnet", "Milkomeda C1", "Milkomeda C1 Devnet", "Europa Hub", "Meter", "Meter Testnet", "Exorde", "Neon Testnet", "Calypso Hub Testnet", "Europa Hub Testnet", "Arbitrum Nova", "Canto", "BitTorrent", "BitTorrent Testnet", "Flare", "Flare Testnet", "Songbird", "Songbird Testnet", "KCC", "KCC Testnet", "Polygon zkEVM Testnet", "Linea Goerli Testnet", "Base Testnet", "Mantle Testnet", "Scroll Alpha Testnet", "Oasys", "Oasys Testnet", "Findora", "Findora Forge Testnet", "SX Network", "Oasis Sapphire", "Polygon zkEVM", "Horizen Yuma Testnet", "Horizen Gobi Testnet", "Nebula Gaming Hub"]
+
+const timeUnitsArray = {
+    "This Month: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
+    "Today: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
+    "Yesterday: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
+    "This Week: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
+    "This Quarter: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
+    "This Year: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
+    "Last 7 Days: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
+    "Last 30 Days: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
+    "Last Week: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
+    "Last Month: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
+    "Last 3 month: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
+    "Last 6 month: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
+    "Last Quarter: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
+    "Last Year: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
+  }
+```
+
 ## Chain GDP Model
 ```shell
   "measure": {
@@ -18,25 +39,8 @@
     "Monthly Growth": ["Transaction Count", "New Addresses", "Transaction sender", "Transactions To", "Active Addresses", "Native Token USD Transfer", "Total Gas Paid", "Average Gas Paid"]
   }
 
-  const timeUnits = ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"];
-  "analyze": {
-    "This Month: timeUnits,
-    "Today t: timeUnits,
-    "Yesterday t: timeUnits,
-    "This Week: timeUnits,
-    "This Quarter: timeUnits,
-    "This Year: timeUnits,
-    "Last 7 Days: timeUnits,
-    "Last 30 Days: timeUnits,
-    "Last Week: timeUnits,
-    "Last Month: timeUnits,
-    "Last 3 month: timeUnits,
-    "Last 6 month: timeUnits,
-    "Last Quarter: timeUnits,
-    "Last Year: timeUnits,
-  }
-
-  "chain name": ["Bitcoin", "Ethereum", "Polygon", "BNB Smart Chain (BSC)", "Avalanche C-Chain", "Fantom", "Moonbeam", "Moonriver", "Rootstock", "Arbitrum", "Palm", "Nervos Godwoken", "Axie/Ronin", "Evmos", "Astar", "Harmony", "Cronos", "Aurora", "Oasis", "Boba Ethereum", "Polygon Mumbai Testnet", "Avalanche Fuji Testnet", "Moonbeam Moonbase Alpha Testnet", "Rootstock Testnet", "Arbitrum Testnet", "Fantom Testnet", "Palm Testnet", "Nervos Godwoken Testnet", "Evmos Testnet", "Shiden", "Harmony Testnet", "Aurora Testnet", "Scroll L2 Testnet", "Scroll L1 Testnet", "DeFi Kingdoms", "Swimmer Network", "Boba Avalanche", "Boba Bobabeam", "Boba BNB", "Boba Rinkeby Testnet", "Boba Bobabase Testnet", "Boba BNB Testnet", "Boba Avalanche Testnet", "Gather", "Gather Testnet", "Optimism", "Calypso Hub", "SKALE", "Razor", "Dexalot", "CryptoBlades/Omnus", "Dexalot Testnet", "Metis", "Milkomeda A1", "Milkomeda A1 Devnet", "Milkomeda C1", "Milkomeda C1 Devnet", "Europa Hub", "Meter", "Meter Testnet", "Exorde", "Neon Testnet", "Calypso Hub Testnet", "Europa Hub Testnet", "Arbitrum Nova", "Canto", "BitTorrent", "BitTorrent Testnet", "Flare", "Flare Testnet", "Songbird", "Songbird Testnet", "KCC", "KCC Testnet", "Polygon zkEVM Testnet", "Linea Goerli Testnet", "Base Testnet", "Mantle Testnet", "Scroll Alpha Testnet", "Oasys", "Oasys Testnet", "Findora", "Findora Forge Testnet", "SX Network", "Oasis Sapphire", "Polygon zkEVM", "Horizen Yuma Testnet", "Horizen Gobi Testnet", "Nebula Gaming Hub"]
+  "analyze": timeUnitsArray
+  "chain name": all_chains
 
   "filters to apply": {
     "Filter 1": ["Date", "Chain Name", "Transaction Hash", "Transaction Sender", "Transaction Recipient", "Event Emitter Address", "Event Hash", "Event Label", "Retention Cohort Month", "Retention Month Number"],
@@ -64,25 +68,8 @@
     "Monthly Growth": ["Trades", "Traders", "Total USD Trading Volume", "Total USD Gas Paid", "Average USD Gas Paid", "Average Trade Size", "Active Pairs", "New Pairs Created"]
   }
 
-  const timeUnits = ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"];
-  "analyze": {
-    "This Month: timeUnits,
-    "Today t: timeUnits,
-    "Yesterday t: timeUnits,
-    "This Week: timeUnits,
-    "This Quarter: timeUnits,
-    "This Year: timeUnits,
-    "Last 7 Days: timeUnits,
-    "Last 30 Days: timeUnits,
-    "Last Week: timeUnits,
-    "Last Month: timeUnits,
-    "Last 3 month: timeUnits,
-    "Last 6 month: timeUnits,
-    "Last Quarter: timeUnits,
-    "Last Year: timeUnits,
-  }
-
-  "chain name": ["Bitcoin", "Ethereum", "Polygon", "BNB Smart Chain (BSC)", "Avalanche C-Chain", "Fantom", "Moonbeam", "Moonriver", "Rootstock", "Arbitrum", "Palm", "Nervos Godwoken", "Axie/Ronin", "Evmos", "Astar", "Harmony", "Cronos", "Aurora", "Oasis", "Boba Ethereum", "Polygon Mumbai Testnet", "Avalanche Fuji Testnet", "Moonbeam Moonbase Alpha Testnet", "Rootstock Testnet", "Arbitrum Testnet", "Fantom Testnet", "Palm Testnet", "Nervos Godwoken Testnet", "Evmos Testnet", "Shiden", "Harmony Testnet", "Aurora Testnet", "Scroll L2 Testnet", "Scroll L1 Testnet", "DeFi Kingdoms", "Swimmer Network", "Boba Avalanche", "Boba Bobabeam", "Boba BNB", "Boba Rinkeby Testnet", "Boba Bobabase Testnet", "Boba BNB Testnet", "Boba Avalanche Testnet", "Gather", "Gather Testnet", "Optimism", "Calypso Hub", "SKALE", "Razor", "Dexalot", "CryptoBlades/Omnus", "Dexalot Testnet", "Metis", "Milkomeda A1", "Milkomeda A1 Devnet", "Milkomeda C1", "Milkomeda C1 Devnet", "Europa Hub", "Meter", "Meter Testnet", "Exorde", "Neon Testnet", "Calypso Hub Testnet", "Europa Hub Testnet", "Arbitrum Nova", "Canto", "BitTorrent", "BitTorrent Testnet", "Flare", "Flare Testnet", "Songbird", "Songbird Testnet", "KCC", "KCC Testnet", "Polygon zkEVM Testnet", "Linea Goerli Testnet", "Base Testnet", "Mantle Testnet", "Scroll Alpha Testnet", "Oasys", "Oasys Testnet", "Findora", "Findora Forge Testnet", "SX Network", "Oasis Sapphire", "Polygon zkEVM", "Horizen Yuma Testnet", "Horizen Gobi Testnet", "Nebula Gaming Hub"]
+  "analyze": timeUnitsArray
+  "chain name": all_chains
 
   "filters to apply": {
     "filter 1": ["Date", "Chain Name", "Transaction Hash", "Protocol Name", "Event", "Aggregator Name", "DEX Version", "Pair Ticker", "Userbase Protocol Name", "Userbase DEX Event", "Pair Address", "Token Ticker", "Token Address", "USD Trade Amount", "Recipient", "Sender", "Funnel Label Events By Second", "Funnel Label Events By Day", "Funnel Label Events By Week", "Funnel Events Event One", "Funnel Events Event Two", "Funnel Events Event Three", "Funnel Events Event Four", "Trade Size Range"],
@@ -91,7 +78,32 @@
 
   "group the data by": ["Chain Name", "Transaction Hash", "Protocol Name", "Event", "Aggregator Name", "DEX Version", "Pair Ticker", "Userbase Protocol Name", "Userbase DEX Event", "Pair Address", "USD Trade Amount", "Recipient", "Sender", "Funnel Label Events By Second", "Funnel Label Events By Day", "Funnel Label Events By Week", "Funnel Events Event One", "Funnel Events Event Two", "Funnel Events Event Three", "Funnel Events Event Four", "Trade Size Range"]
 ```
+
 ## Futures
+```shell
+  "measure": {
+    "Count": ["Protocols", "Active Tokens", "Active Addresses", "Addresses Swapping", "Addresses Margin Trading", "Addresses Adding Liquidity", "Addresses Removing Liquidity", "Addresses Liquidated", "Transactions", "Swaps", "Margin Trades", "Add Liquidity Events", "Remove Liquidity Events", "Positions Liquidated"],
+    "Total": ["USD Volume", "USD Trading Volume", "USD Margin Trading Volume", "USD Swap Volume", "USD Liquidation Volume", "USD Liquidity Added", "USD Liquidity Removed", "USD Net Realised Profit/Loss", "USD Realized Loss", "USD Realized Profit", "USD Swap Fees", "USD Margin Trading Fees", "USD Liquidity Fees", "Gas Paid Native", "Gas Paid USD"],
+    "Average": ["USD Margin Trading Volume", "USD Swap Volume", "USD Liquidation Volume", "USD Liquidity Added", "USD Liquidity Removed", "USD Realized Loss", "USD Realized Profit", "USD Swap Fees", "USD Margin Trading Fees", "USD Liquidity Fees", "Gas Paid Native", "Gas Paid USD", "DAU", "WAU"],
+    "Weighted Average": ["Leverage", "Cumulative Leverage"],
+    "Median": ["USD Margin Trading Volume", "USD Swap Volume", "USD Liquidation Volume", "USD Liquidity Added", "USD Liquidity Removed", "USD Realized Loss", "USD Realized Profit", "USD Swap Fees", "USD Margin Trading Fees", "USD Liquidity Fees", "Gas Paid Native", "Gas Paid USD"],
+    "Min": ["USD Margin Trading Volume", "USD Swap Volume", "USD Liquidation Volume", "USD Liquidity Added", "USD Liquidity Removed", "USD Realized Loss", "USD Realized Profit", "USD Swap Fees", "USD Margin Trading Fees", "USD Liquidity Fees", "Gas Paid Native", "Gas Paid USD"],
+    "Max": ["USD Margin Trading Volume", "USD Swap Volume", "USD Liquidation Volume", "USD Liquidity Added", "USD Liquidity Removed", "USD Realized Loss", "USD Realized Profit", "USD Swap Fees", "USD Margin Trading Fees", "USD Liquidity Fees", "Gas Paid Native", "Gas Paid USD"],
+    "Ratios": ["Margin Trades Per Trader", "Swap Volume Per Trader", "Margin Trade Volume Per Trader", "USD Gas Paid Per Active Address", "Net Liquidity Added", "Stickiness Ratio", "Days Active Per Active Address", "Days Active Per Address Swapping Tokens", "Days Active Per Margin Trader", "Tokens Traded Per Trader", "Tokens Traded per Margin Trader"],
+    "Day 30 Growth": ["Swaps", "Addresses Swapping", "Margin Trades", "Addresses Margin Trading", "Total USD Swap Volume", "Total USD Margin Trading Volume", "Total USD Gas Paid", "Average USD Gas Paid", "Average USD Swap Size", "Average USD Margin Trade Size"],
+    "Monthly Growth": ["Swaps", "Addresses Swapping", "Margin Trades", "Addresses Margin Trading", "Total USD Swap Volume", "Total USD Margin Trading Volume", "Total USD Gas Paid", "Average USD Gas Paid", "Average USD Swap Size", "Average USD Margin Trade Size"]
+  }
+
+  "analyze": timeUnitsArray
+  "chain name": all_chains
+
+  "filters to apply": {
+    "filter 1": ["Date", "Chain Name", "Protocol Name", "Aggregator Name", "DEX Version", "Event", "Position Direction", "Collateral Token", "Position Token", "Funding Rate", "Leverage Multiplier", "Token In Name", "Token Out Name", "User", "Trade PnL", "Swap Size Range", "Margin Trade Size Range", "Trade PnL Range"],
+    "filter 2": ["equals", "does not equal", "in date range", "not in date range", "after date", "before date", "start with", "end with"],
+  }
+
+  "group the data by": ["Chain Name", "Protocol Name", "Aggregator Name", "DEX Version", "Event", "Position Direction", "Collateral Token", "Position Token", "Funding Rate", "Leverage Multiplier", "Token In Name", "Token Out Name", "User", "Trade PnL", "Swap Size Range", "Margin Trade Size Range", "Trade PnL Range"]
+```
 
 ## Token Dog Mode
 ## JPEG Analysis
