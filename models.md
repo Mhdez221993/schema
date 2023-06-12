@@ -105,8 +105,36 @@ const timeUnitsArray = {
   "group the data by": ["Chain Name", "Protocol Name", "Aggregator Name", "DEX Version", "Event", "Position Direction", "Collateral Token", "Position Token", "Funding Rate", "Leverage Multiplier", "Token In Name", "Token Out Name", "User", "Trade PnL", "Swap Size Range", "Margin Trade Size Range", "Trade PnL Range"]
 ```
 
+## JPEG Analysis model
+```shell
+  "measure": {
+    "Total": ["USD Sales Volume", "Native Sales Volume", "NFT Gas Paid Native", "NFT Gas Paid USD", "Floor Price"],
+    "Count": ["Protocols", "Collections", "Token ID", "Token ID", "Buyers", "Sellers", "New Collection Buyers", "New Collection Sellers", "New Marketplace Buyers", "New Marketplace Sellers", "Traders", "Sales"],
+    "Average":  ["USD Sales Price", "Native Sales Price", "NFT Gas Paid USD", "NFT Gas Paid Native", "DAU", "WAU"],
+    "Median": ["USD Sales Price", "Native Sales Price", "NFT Gas Paid Native", "NFT Gas Paid USD"],
+    "Min": ["USD Sales Price", "Native Sales Price", "NFT Gas Paid Native", "NFT Gas Paid USD"],
+    "Max": ["USD Sales Price", "Native Sales Price", "NFT Gas Paid Native", "NFT Gas Paid USD"],
+    "percentage": ["Buyers That Are New", "Sellers That Are New"],
+    "Retention": ["Cohort Size", "Retention Rate"],
+    "Ratios":  ["Purchases Per Buyer", "Sales Per Seller", "Volume Per Trader", "Volume Per Seller", "Volume Per Buyer", "Stickiness Ratio", "Days Active Per Trader", "Days Active Per Buyer", "Days Active Per Seller", "Collections Bought Per Buyer", "Collections Sold Per Seller", "Marketplaces Used Per Trader"],
+    "Day 30 Growth": ["USD Volume", "USD Gas Paid", "Collections", "Buyers", "Sellers", "Traders", "Sales", "Average Sales Price"],
+    "Moving Average 30 Day": ["USD Volume", "USD Gas Paid", "Collections", "Buyers", "Sellers", "Traders", "Sales", "Average Sales Price"],
+    "Moving Average 7 Day": ["USD Volume", "USD Gas Paid", "Collections", "Buyers", "Sellers", "Traders", "Sales", "Average Sales Price"],
+    "Monthly Growth": ["USD Volume", "USD Gas Paid", "Collection", "Buyer", "Seller", "Traders", "Sales", "Average Sales Price"]
+  }
+
+  "analyze": timeUnitsArray
+  "chain name": all_chains
+
+  "filters to apply": {
+    "filter 1": ["Date", "Chain Name", "Transaction Hash", "Protocol Name", "Userbase Market Buyers", "Userbase Market Sellers", "Userbase Collection Name Buyers", "Userbase Collection Name Sellers", "Collection Name", "Collection Address", "Token ID", "Buyer Address", "Seller Address", "Token Ticker", "Token Address", "Retention Cohort Month", "Retention Month Number", "USD Price Ranges"],
+    "filter 2": ["equals", "does not equal", "in date range", "not in date range", "after date", "before date", "start with", "end with"],
+  }
+
+  "group the data by": ["Chain Name", "Transaction Hash", "Protocol Name", "Userbase Market Buyers", "Userbase Market Sellers", "Userbase Collection Name Buyers", "Userbase Collection Name Sellers", "Collection Name", "Collection Address", "Token ID", "Buyer Address", "Seller Address", "Token Ticker", "Token Address", "Retention Cohort Month", "Retention Month Number", "USD Price Ranges"]
+```
+
 ## Token Dog Mode
-## JPEG Analysis
 ## Swap Land
 ## Lending
 ## Token Balances
