@@ -134,7 +134,7 @@ const timeUnitsArray = {
   "group the data by": ["Chain Name", "Transaction Hash", "Protocol Name", "Userbase Market Buyers", "Userbase Market Sellers", "Userbase Collection Name Buyers", "Userbase Collection Name Sellers", "Collection Name", "Collection Address", "Token ID", "Buyer Address", "Seller Address", "Token Ticker", "Token Address", "Retention Cohort Month", "Retention Month Number", "USD Price Ranges"]
 ```
 
-## Token Dog Mode
+## Lending Model
 ## Swap Land
-## Lending
+## Token Dog Mode
 ## Token Balances
