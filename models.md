@@ -68,8 +68,24 @@ const timeUnitsArray = {
     "Monthly Growth": ["Trades", "Traders", "Total USD Trading Volume", "Total USD Gas Paid", "Average USD Gas Paid", "Average Trade Size", "Active Pairs", "New Pairs Created"]
   }
 
-  "time period": timeUnitsArray
-  "chain name": all_chains
+  "time period": {
+    "This Month: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
+    "Today: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
+    "Yesterday: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
+    "This Week: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
+    "This Quarter: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
+    "This Year: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
+    "Last 7 Days: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
+    "Last 30 Days: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
+    "Last Week: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
+    "Last Month: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
+    "Last 3 month: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
+    "Last 6 month: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
+    "Last Quarter: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
+    "Last Year: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
+  }
+
+  "chain name": ["Bitcoin", "Ethereum", "Polygon", "BNB Smart Chain (BSC)", "Avalanche C-Chain", "Fantom", "Moonbeam", "Moonriver", "Rootstock", "Arbitrum", "Palm", "Nervos Godwoken", "Axie/Ronin", "Evmos", "Astar", "Harmony", "Cronos", "Aurora", "Oasis", "Boba Ethereum", "Polygon Mumbai Testnet", "Avalanche Fuji Testnet", "Moonbeam Moonbase Alpha Testnet", "Rootstock Testnet", "Arbitrum Testnet", "Fantom Testnet", "Palm Testnet", "Nervos Godwoken Testnet", "Evmos Testnet", "Shiden", "Harmony Testnet", "Aurora Testnet", "Scroll L2 Testnet", "Scroll L1 Testnet", "DeFi Kingdoms", "Swimmer Network", "Boba Avalanche", "Boba Bobabeam", "Boba BNB", "Boba Rinkeby Testnet", "Boba Bobabase Testnet", "Boba BNB Testnet", "Boba Avalanche Testnet", "Gather", "Gather Testnet", "Optimism", "Calypso Hub", "SKALE", "Razor", "Dexalot", "CryptoBlades/Omnus", "Dexalot Testnet", "Metis", "Milkomeda A1", "Milkomeda A1 Devnet", "Milkomeda C1", "Milkomeda C1 Devnet", "Europa Hub", "Meter", "Meter Testnet", "Exorde", "Neon Testnet", "Calypso Hub Testnet", "Europa Hub Testnet", "Arbitrum Nova", "Canto", "BitTorrent", "BitTorrent Testnet", "Flare", "Flare Testnet", "Songbird", "Songbird Testnet", "KCC", "KCC Testnet", "Polygon zkEVM Testnet", "Linea Goerli Testnet", "Base Testnet", "Mantle Testnet", "Scroll Alpha Testnet", "Oasys", "Oasys Testnet", "Findora", "Findora Forge Testnet", "SX Network", "Oasis Sapphire", "Polygon zkEVM", "Horizen Yuma Testnet", "Horizen Gobi Testnet", "Nebula Gaming Hub"]
 
   "filters to apply": {
     "filter 1": ["Date", "Chain Name", "Transaction Hash", "Protocol Name", "Event", "Aggregator Name", "DEX Version", "Pair Ticker", "Userbase Protocol Name", "Userbase DEX Event", "Pair Address", "Token Ticker", "Token Address", "USD Trade Amount", "Recipient", "Sender", "Funnel Label Events By Second", "Funnel Label Events By Day", "Funnel Label Events By Week", "Funnel Events Event One", "Funnel Events Event Two", "Funnel Events Event Three", "Funnel Events Event Four", "Trade Size Range"],
