@@ -68,7 +68,7 @@ const timeUnitsArray = {
     "Monthly Growth": ["Trades", "Traders", "Total USD Trading Volume", "Total USD Gas Paid", "Average USD Gas Paid", "Average Trade Size", "Active Pairs", "New Pairs Created"]
   }
 
-  "analyze": timeUnitsArray
+  "time period": timeUnitsArray
   "chain name": all_chains
 
   "filters to apply": {
