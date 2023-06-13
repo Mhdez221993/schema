@@ -69,20 +69,20 @@ const timeUnitsArray = {
   }
 
   "time period": {
-    "This Month: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
-    "Today: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
-    "Yesterday: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
-    "This Week: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
-    "This Quarter: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
-    "This Year: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
-    "Last 7 Days: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
-    "Last 30 Days: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
-    "Last Week: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
-    "Last Month: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
-    "Last 3 month: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
-    "Last 6 month: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
-    "Last Quarter: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
-    "Last Year: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
+    "This Month": {"Aggregated By": ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"]},
+    "Today": {"Aggregated By": ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"]},
+    "Yesterday": {"Aggregated By": ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"]},
+    "This Week": {"Aggregated By": ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"]},
+    "This Quarter": {"Aggregated By": ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"]},
+    "This Year": {"Aggregated By": ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"]},
+    "Last 7 Days": {"Aggregated By": ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"]},
+    "Last 30 Days": {"Aggregated By": ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"]},
+    "Last Week": {"Aggregated By": ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"]},
+    "Last Month": {"Aggregated By": ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"]},
+    "Last 3 month": {"Aggregated By": ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"]},
+    "Last 6 month": {"Aggregated By": ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"]},
+    "Last Quarter": {"Aggregated By": ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"]},
+    "Last Year": {"Aggregated By": ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"]},
   }
 
   "chain name": ["Bitcoin", "Ethereum", "Polygon", "BNB Smart Chain (BSC)", "Avalanche C-Chain", "Fantom", "Moonbeam", "Moonriver", "Rootstock", "Arbitrum", "Palm", "Nervos Godwoken", "Axie/Ronin", "Evmos", "Astar", "Harmony", "Cronos", "Aurora", "Oasis", "Boba Ethereum", "Polygon Mumbai Testnet", "Avalanche Fuji Testnet", "Moonbeam Moonbase Alpha Testnet", "Rootstock Testnet", "Arbitrum Testnet", "Fantom Testnet", "Palm Testnet", "Nervos Godwoken Testnet", "Evmos Testnet", "Shiden", "Harmony Testnet", "Aurora Testnet", "Scroll L2 Testnet", "Scroll L1 Testnet", "DeFi Kingdoms", "Swimmer Network", "Boba Avalanche", "Boba Bobabeam", "Boba BNB", "Boba Rinkeby Testnet", "Boba Bobabase Testnet", "Boba BNB Testnet", "Boba Avalanche Testnet", "Gather", "Gather Testnet", "Optimism", "Calypso Hub", "SKALE", "Razor", "Dexalot", "CryptoBlades/Omnus", "Dexalot Testnet", "Metis", "Milkomeda A1", "Milkomeda A1 Devnet", "Milkomeda C1", "Milkomeda C1 Devnet", "Europa Hub", "Meter", "Meter Testnet", "Exorde", "Neon Testnet", "Calypso Hub Testnet", "Europa Hub Testnet", "Arbitrum Nova", "Canto", "BitTorrent", "BitTorrent Testnet", "Flare", "Flare Testnet", "Songbird", "Songbird Testnet", "KCC", "KCC Testnet", "Polygon zkEVM Testnet", "Linea Goerli Testnet", "Base Testnet", "Mantle Testnet", "Scroll Alpha Testnet", "Oasys", "Oasys Testnet", "Findora", "Findora Forge Testnet", "SX Network", "Oasis Sapphire", "Polygon zkEVM", "Horizen Yuma Testnet", "Horizen Gobi Testnet", "Nebula Gaming Hub"]
