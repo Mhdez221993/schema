@@ -67,8 +67,7 @@ What filters do you want to apply? choose a filter 1: ["Date", "Chain Name", "Tr
 
 What do you want to group the data by? choose a filter: ["Chain Name", "Transaction Hash", "Protocol Name", "Event", "Aggregator Name", "DEX Version", "Pair Ticker", "Userbase Protocol Name", "Userbase DEX Event", "Pair Address", "USD Trade Amount", "Recipient", "Sender", "Funnel Label Events By Second", "Funnel Label Events By Day", "Funnel Label Events By Week", "Funnel Events Event One", "Funnel Events Event Two", "Funnel Events Event Three", "Funnel Events Event Four", "Trade Size Range"];
 
-
-```js
+Options------------------------------------
     CountOption = ["Protocols", "Active Pairs", "Active Tokens", "Active Addresses", "Traders", "Transactions", "Addresses Adding Liquidity", "Addresses Removing Liquidity", "Trades", "Aggregator Trades", "Aggregator Traders", "Add Liquidity Events", "Remove Liquidity Events", "New Pairs Created", "New DEX Protocol Users", "New DEX Event Users"]
     TotalOption = ["USD Trading Volume", "USD Selling Volume", "USD Buying Volume", "USD Net Trading Volume", "USD Aggregator Volume", "USD Liquidity Added", "USD Liquidity Removed", "USD Net Liquidity Added", "Gas Paid Native", "Total Gas Paid USD"]
     AverageOption = ["USD Trade Size", "USD Liquidity Added", "USD Liquidity Removed", "Gas Paid Native", "Average Gas Paid USD", "Token Price", "DAU", "WAU"]
@@ -82,7 +81,6 @@ What do you want to group the data by? choose a filter: ["Chain Name", "Transact
     MovingAverage30DaysOption = ["Trades", "Traders", "Total USD Trading Volume", "Total USD Gas Paid", "Average USD Gas Paid", "Average Trade Size", "Active Pairs", "New Pairs Created"]
     MovingAverage7DaysOption = ["Transaction Count", "Traders", "Total USD Trading Volume", "Total USD Gas Paid", "Average USD Gas Paid", "Average Trade Size", "Active Pairs", "New Pairs Created"]
     MonthlyGrowthOption = ["Trades", "Traders", "Total USD Trading Volume", "Total USD Gas Paid", "Average USD Gas Paid", "Average Trade Size", "Active Pairs", "New Pairs Created"]
-```
 
 ## Futures
 ```shell
