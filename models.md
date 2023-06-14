@@ -51,48 +51,37 @@ const timeUnitsArray = {
 ```
 
 ## Dex Model
-```shell
-  "measure": {
-    "Count": ["Protocols", "Active Pairs", "Active Tokens", "Active Addresses", "Traders", "Transactions", "Addresses Adding Liquidity", "Addresses Removing Liquidity", "Trades", "Aggregator Trades", "Aggregator Traders", "Add Liquidity Events", "Remove Liquidity Events", "New Pairs Created", "New DEX Protocol Users", "New DEX Event Users"],
-    "Total": ["USD Trading Volume", "USD Selling Volume", "USD Buying Volume", "USD Net Trading Volume", "USD Aggregator Volume", "USD Liquidity Added", "USD Liquidity Removed", "USD Net Liquidity Added", "Gas Paid Native", "Total Gas Paid USD"],
-    "Average": ["USD Trade Size", "USD Liquidity Added", "USD Liquidity Removed", "Gas Paid Native", "Average Gas Paid USD", "Token Price", "DAU", "WAU"],
-    "Median": ["USD Trade Size", "USD Liquidity Added", "USD Liquidity Removed", "Gas Paid Native", "Gas Paid USD"],
-    "Min": ["USD Trade Size", "USD Liquidity Added", "USD Liquidity Removed", "Gas Paid Native", "Gas Paid USD"],
-    "Max": ["USD Trade Size", "USD Liquidity Added", "USD Liquidity Removed", "Gas Paid Native", "Gas Paid USD", "Date", "Latency In Minutes: Now", "Latency In Minutes: All Chains"],
-    "Ratios": ["Trades Per Trader", "Trades Per Transaction", "Volume Per Trader", "USD Gas Paid Per Trader", "Net Liquidity Added", "Stickiness Ratio", "Days Active Per Active Address", "Days Active Per Trader", "Pairs Traded Per Trader", "DEXs Used Per Trader", "Aggregators Used Per Trader"],
-    "Funnel Count": 'provide address',
-    "Percentage": ["Trades Through Aggregators", "Traders Using Aggregators"],
-    "Day 30 Growth": ["Trades", "Traders", "Total USD Trading Volume", "Total USD Gas Paid", "Average USD Gas Paid", "Average Trade Size", "Active Pairs", "New Pairs Created"],
-    "Moving Average 30 Day": ["Trades", "Traders", "Total USD Trading Volume", "Total USD Gas Paid", "Average USD Gas Paid", "Average Trade Size", "Active Pairs", "New Pairs Created"],
-    "Moving Average 7 Day": ["Transaction Count", "Traders", "Total USD Trading Volume", "Total USD Gas Paid", "Average USD Gas Paid", "Average Trade Size", "Active Pairs", "New Pairs Created"],
-    "Monthly Growth": ["Trades", "Traders", "Total USD Trading Volume", "Total USD Gas Paid", "Average USD Gas Paid", "Average Trade Size", "Active Pairs", "New Pairs Created"]
-  }
+What model would you like to use? choose a filter: [Chain Gdp, Dex, Futures, Jpeg Analysis, Lending, Token Balances];
 
-  "time period": {
-    "This Month": {"Aggregated By": ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"]},
-    "Today": {"Aggregated By": ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"]},
-    "Yesterday": {"Aggregated By": ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"]},
-    "This Week": {"Aggregated By": ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"]},
-    "This Quarter": {"Aggregated By": ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"]},
-    "This Year": {"Aggregated By": ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"]},
-    "Last 7 Days": {"Aggregated By": ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"]},
-    "Last 30 Days": {"Aggregated By": ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"]},
-    "Last Week": {"Aggregated By": ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"]},
-    "Last Month": {"Aggregated By": ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"]},
-    "Last 3 month": {"Aggregated By": ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"]},
-    "Last 6 month": {"Aggregated By": ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"]},
-    "Last Quarter": {"Aggregated By": ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"]},
-    "Last Year": {"Aggregated By": ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"]},
-  }
 
-  "chain name": ["Bitcoin", "Ethereum", "Polygon", "BNB Smart Chain (BSC)", "Avalanche C-Chain", "Fantom", "Moonbeam", "Moonriver", "Rootstock", "Arbitrum", "Palm", "Nervos Godwoken", "Axie/Ronin", "Evmos", "Astar", "Harmony", "Cronos", "Aurora", "Oasis", "Boba Ethereum", "Polygon Mumbai Testnet", "Avalanche Fuji Testnet", "Moonbeam Moonbase Alpha Testnet", "Rootstock Testnet", "Arbitrum Testnet", "Fantom Testnet", "Palm Testnet", "Nervos Godwoken Testnet", "Evmos Testnet", "Shiden", "Harmony Testnet", "Aurora Testnet", "Scroll L2 Testnet", "Scroll L1 Testnet", "DeFi Kingdoms", "Swimmer Network", "Boba Avalanche", "Boba Bobabeam", "Boba BNB", "Boba Rinkeby Testnet", "Boba Bobabase Testnet", "Boba BNB Testnet", "Boba Avalanche Testnet", "Gather", "Gather Testnet", "Optimism", "Calypso Hub", "SKALE", "Razor", "Dexalot", "CryptoBlades/Omnus", "Dexalot Testnet", "Metis", "Milkomeda A1", "Milkomeda A1 Devnet", "Milkomeda C1", "Milkomeda C1 Devnet", "Europa Hub", "Meter", "Meter Testnet", "Exorde", "Neon Testnet", "Calypso Hub Testnet", "Europa Hub Testnet", "Arbitrum Nova", "Canto", "BitTorrent", "BitTorrent Testnet", "Flare", "Flare Testnet", "Songbird", "Songbird Testnet", "KCC", "KCC Testnet", "Polygon zkEVM Testnet", "Linea Goerli Testnet", "Base Testnet", "Mantle Testnet", "Scroll Alpha Testnet", "Oasys", "Oasys Testnet", "Findora", "Findora Forge Testnet", "SX Network", "Oasis Sapphire", "Polygon zkEVM", "Horizen Yuma Testnet", "Horizen Gobi Testnet", "Nebula Gaming Hub"]
+What would you like to measure? first choose a filter: [Count , Total, Average, Median, Min, Max, Ratios, Funnel ssCount, Percentage, Day 30 Growth, Moving Average 30 Days, Moving Average 7 Days, Monthly Growth], choose an options for the filter: [CountOption, TotalOption, AverageOption, MedianOption, MinOption, MaxOption, RatiosOption, Funnel ssCountOption, PercentageOption, Day30GrowthOption, MovingAverage30DaysOption, MovingAverage7DaysOption, MonthlyGrowthOption];
 
-  "filters to apply": {
-    "filter 1": ["Date", "Chain Name", "Transaction Hash", "Protocol Name", "Event", "Aggregator Name", "DEX Version", "Pair Ticker", "Userbase Protocol Name", "Userbase DEX Event", "Pair Address", "Token Ticker", "Token Address", "USD Trade Amount", "Recipient", "Sender", "Funnel Label Events By Second", "Funnel Label Events By Day", "Funnel Label Events By Week", "Funnel Events Event One", "Funnel Events Event Two", "Funnel Events Event Three", "Funnel Events Event Four", "Trade Size Range"],
-    "filter 2": ["equals", "does not equal", "in date range", "not in date range", "after date", "before date", "start with", "end with"],
-  }
 
-  "group the data by": ["Chain Name", "Transaction Hash", "Protocol Name", "Event", "Aggregator Name", "DEX Version", "Pair Ticker", "Userbase Protocol Name", "Userbase DEX Event", "Pair Address", "USD Trade Amount", "Recipient", "Sender", "Funnel Label Events By Second", "Funnel Label Events By Day", "Funnel Label Events By Week", "Funnel Events Event One", "Funnel Events Event Two", "Funnel Events Event Three", "Funnel Events Event Four", "Trade Size Range"]
+What time period would you like to analyze? choose a filter: ["This Month", "Today", "Yesterday", "This Week", "This Quarter", "This Year", "Last 7 Days", "Last 30 Days", "Last Week", "Last Month", "Last 3 month", "Last 6 month", "Last Quarter", "Last Year"]   Aggregated By: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"];
+
+What chain would you like to analyze? choose a filter: ["Bitcoin", "Ethereum", "Polygon", "BNB Smart Chain (BSC)", "Avalanche C-Chain", "Fantom", "Moonbeam", "Moonriver", "Rootstock", "Arbitrum", "Palm", "Nervos Godwoken", "Axie/Ronin", "Evmos", "Astar", "Harmony", "Cronos", "Aurora", "Oasis", "Boba Ethereum", "Polygon Mumbai Testnet", "Avalanche Fuji Testnet", "Moonbeam Moonbase Alpha Testnet", "Rootstock Testnet", "Arbitrum Testnet", "Fantom Testnet", "Palm Testnet", "Nervos Godwoken Testnet", "Evmos Testnet", "Shiden", "Harmony Testnet", "Aurora Testnet", "Scroll L2 Testnet", "Scroll L1 Testnet", "DeFi Kingdoms", "Swimmer Network", "Boba Avalanche", "Boba Bobabeam", "Boba BNB", "Boba Rinkeby Testnet", "Boba Bobabase Testnet", "Boba BNB Testnet", "Boba Avalanche Testnet", "Gather", "Gather Testnet", "Optimism", "Calypso Hub", "SKALE", "Razor", "Dexalot", "CryptoBlades/Omnus", "Dexalot Testnet", "Metis", "Milkomeda A1", "Milkomeda A1 Devnet", "Milkomeda C1", "Milkomeda C1 Devnet", "Europa Hub", "Meter", "Meter Testnet", "Exorde", "Neon Testnet", "Calypso Hub Testnet", "Europa Hub Testnet", "Arbitrum Nova", "Canto", "BitTorrent", "BitTorrent Testnet", "Flare", "Flare Testnet", "Songbird", "Songbird Testnet", "KCC", "KCC Testnet", "Polygon zkEVM Testnet", "Linea Goerli Testnet", "Base Testnet", "Mantle Testnet", "Scroll Alpha Testnet", "Oasys", "Oasys Testnet", "Findora", "Findora Forge Testnet", "SX Network", "Oasis Sapphire", "Polygon zkEVM", "Horizen Yuma Testnet", "Horizen Gobi Testnet", "Nebula Gaming Hub"];
+
+
+What filters do you want to apply? choose a filter 1: ["Date", "Chain Name", "Transaction Hash", "Protocol Name", "Event", "Aggregator Name", "DEX Version", "Pair Ticker", "Userbase Protocol Name", "Userbase DEX Event", "Pair Address", "Token Ticker", "Token Address", "USD Trade Amount", "Recipient", "Sender", "Funnel Label Events By Second", "Funnel Label Events By Day", "Funnel Label Events By Week", "Funnel Events Event One", "Funnel Events Event Two", "Funnel Events Event Three", "Funnel Events Event Four", "Trade Size Range"], choose a filter 2: ["equals", "does not equal", "in date range", "not in date range", "after date", "before date", "start with", "end with"], choose and options: [options to choose base on filer 1 and filter 2];
+
+
+What do you want to group the data by? choose a filter: ["Chain Name", "Transaction Hash", "Protocol Name", "Event", "Aggregator Name", "DEX Version", "Pair Ticker", "Userbase Protocol Name", "Userbase DEX Event", "Pair Address", "USD Trade Amount", "Recipient", "Sender", "Funnel Label Events By Second", "Funnel Label Events By Day", "Funnel Label Events By Week", "Funnel Events Event One", "Funnel Events Event Two", "Funnel Events Event Three", "Funnel Events Event Four", "Trade Size Range"];
+
+
+```js
+    CountOption = ["Protocols", "Active Pairs", "Active Tokens", "Active Addresses", "Traders", "Transactions", "Addresses Adding Liquidity", "Addresses Removing Liquidity", "Trades", "Aggregator Trades", "Aggregator Traders", "Add Liquidity Events", "Remove Liquidity Events", "New Pairs Created", "New DEX Protocol Users", "New DEX Event Users"]
+    TotalOption = ["USD Trading Volume", "USD Selling Volume", "USD Buying Volume", "USD Net Trading Volume", "USD Aggregator Volume", "USD Liquidity Added", "USD Liquidity Removed", "USD Net Liquidity Added", "Gas Paid Native", "Total Gas Paid USD"]
+    AverageOption = ["USD Trade Size", "USD Liquidity Added", "USD Liquidity Removed", "Gas Paid Native", "Average Gas Paid USD", "Token Price", "DAU", "WAU"]
+    MedianOption = ["USD Trade Size", "USD Liquidity Added", "USD Liquidity Removed", "Gas Paid Native", "Gas Paid USD"]
+    MinOption = ["USD Trade Size", "USD Liquidity Added", "USD Liquidity Removed", "Gas Paid Native", "Gas Paid USD"]
+    MaxOption = ["USD Trade Size", "USD Liquidity Added", "USD Liquidity Removed", "Gas Paid Native", "Gas Paid USD", "Date", "Latency In Minutes = Now", "Latency In Minutes = All Chains"]
+    RatiosOption = ["Trades Per Trader", "Trades Per Transaction", "Volume Per Trader", "USD Gas Paid Per Trader", "Net Liquidity Added", "Stickiness Ratio", "Days Active Per Active Address", "Days Active Per Trader", "Pairs Traded Per Trader", "DEXs Used Per Trader", "Aggregators Used Per Trader"]
+    FunnelCountOption = ["provide address"]
+    PercentageOption = ["Trades Through Aggregators", "Traders Using Aggregators"]
+    Day30GrowthOption = ["Trades", "Traders", "Total USD Trading Volume", "Total USD Gas Paid", "Average USD Gas Paid", "Average Trade Size", "Active Pairs", "New Pairs Created"]
+    MovingAverage30DaysOption = ["Trades", "Traders", "Total USD Trading Volume", "Total USD Gas Paid", "Average USD Gas Paid", "Average Trade Size", "Active Pairs", "New Pairs Created"]
+    MovingAverage7DaysOption = ["Transaction Count", "Traders", "Total USD Trading Volume", "Total USD Gas Paid", "Average USD Gas Paid", "Average Trade Size", "Active Pairs", "New Pairs Created"]
+    MonthlyGrowthOption = ["Trades", "Traders", "Total USD Trading Volume", "Total USD Gas Paid", "Average USD Gas Paid", "Average Trade Size", "Active Pairs", "New Pairs Created"]
 ```
 
 ## Futures
