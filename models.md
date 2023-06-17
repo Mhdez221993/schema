@@ -1,54 +1,52 @@
-# Models
+# Increment
 
-```shell
-const all_chains = ["Bitcoin", "Ethereum", "Polygon", "BNB Smart Chain (BSC)", "Avalanche C-Chain", "Fantom", "Moonbeam", "Moonriver", "Rootstock", "Arbitrum", "Palm", "Nervos Godwoken", "Axie/Ronin", "Evmos", "Astar", "Harmony", "Cronos", "Aurora", "Oasis", "Boba Ethereum", "Polygon Mumbai Testnet", "Avalanche Fuji Testnet", "Moonbeam Moonbase Alpha Testnet", "Rootstock Testnet", "Arbitrum Testnet", "Fantom Testnet", "Palm Testnet", "Nervos Godwoken Testnet", "Evmos Testnet", "Shiden", "Harmony Testnet", "Aurora Testnet", "Scroll L2 Testnet", "Scroll L1 Testnet", "DeFi Kingdoms", "Swimmer Network", "Boba Avalanche", "Boba Bobabeam", "Boba BNB", "Boba Rinkeby Testnet", "Boba Bobabase Testnet", "Boba BNB Testnet", "Boba Avalanche Testnet", "Gather", "Gather Testnet", "Optimism", "Calypso Hub", "SKALE", "Razor", "Dexalot", "CryptoBlades/Omnus", "Dexalot Testnet", "Metis", "Milkomeda A1", "Milkomeda A1 Devnet", "Milkomeda C1", "Milkomeda C1 Devnet", "Europa Hub", "Meter", "Meter Testnet", "Exorde", "Neon Testnet", "Calypso Hub Testnet", "Europa Hub Testnet", "Arbitrum Nova", "Canto", "BitTorrent", "BitTorrent Testnet", "Flare", "Flare Testnet", "Songbird", "Songbird Testnet", "KCC", "KCC Testnet", "Polygon zkEVM Testnet", "Linea Goerli Testnet", "Base Testnet", "Mantle Testnet", "Scroll Alpha Testnet", "Oasys", "Oasys Testnet", "Findora", "Findora Forge Testnet", "SX Network", "Oasis Sapphire", "Polygon zkEVM", "Horizen Yuma Testnet", "Horizen Gobi Testnet", "Nebula Gaming Hub"]
+Increment is a novel no-code solution that allows users to build dynamic, personalized charts using powerful data models, automatically writing SQL based on the analytics you want to see, and providing a comprehensive analytics experience for Web3 data.
 
-const timeUnitsArray = {
-    "This Month: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
-    "Today: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
-    "Yesterday: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
-    "This Week: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
-    "This Quarter: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
-    "This Year: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
-    "Last 7 Days: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
-    "Last 30 Days: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
-    "Last Week: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
-    "Last Month: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
-    "Last 3 month: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
-    "Last 6 month: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
-    "Last Quarter: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
-    "Last Year: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"],
-  }
-```
+What model would you like to use? choose a filter: [Chain Gdp, Dex, Jpeg Analysis, Lending, Token Balances, swap land];
 
-## Chain GDP Model
-```shell
-  "measure": {
-    "Total": ["USD Gas Paid", "Native Gas Paid", "USD Native Token Transfer", "Native Token Transfer", "ERC 20 Token Transfer"],
-    "Count": ["Rows", "Transactions", "Unsuccessful Transactions", "New Addresses", "Existing Addresses", "Transactions From", "Transactions To", "Active Addresses", "Active ERC 20 Addresses"],
-    "Average": ["USD Gas Paid", "Native Gas Paid", "USD Native Token Transfer", "Native Token Transfer", "ERC 20 Token Transfer", "Block Time", "DAU", "WAU"],
-    "Moving Average 30 Day": ["Transaction Count", "Active Addresses", "Total USD Gas Paid", "Average USD Gas Paid", "Total ERC 20 Token Transfer", "Average ERC 20 Token Transfer"],
-    "Moving Average 7 Day": ["Transaction Count", "Active Addresses", "Total USD Gas Paid", "Average USD Gas Paid"],
-    "Median": ["USD Gas Paid", "Native Gas Paid", "USD Native Token Transfer", "Native Token Transfer"],
-    "Min": ["USD Gas Paid", "Native Gas Paid", "USD Native Token Transfer", "Native Token Transfer"],
-    "Max": ["USD Gas Paid", "Native Gas Paid", "USD Native Token Transfer", "Native Token Transfer", "Date", "Latency In Minutes"],
-    "Ratios": ["Transactions Per Active Address", "USD Gas Paid Per Transaction", "USD Gas Paid Per Address", "Transactions Per Second", "Stickiness Ratio", "Days Active Per User"],
-    "Percentage": ["Active Addresses Selling NFTs", "Active Addresses Buying NFTs", "Active Addresses Trading On A DEX", "Transactions From NFT Sales", "Transactions From DEX Trades", "Transactions failing", "Gas Limit Utilisation"],
-    "Retention": ["Cohort Size", "Retention Rate"],
-    "Day 30 Growth": ["Transaction Count", "New Addresses", "Transaction Senders", "Transaction Recipients", "Active Addresses", "Native Token USD Transfer", "Total Gas Paid", "Average Gas Paid"],
-    "Monthly Growth": ["Transaction Count", "New Addresses", "Transaction sender", "Transactions To", "Active Addresses", "Native Token USD Transfer", "Total Gas Paid", "Average Gas Paid"]
-  }
 
-  "analyze": timeUnitsArray
-  "chain name": all_chains
+What would you like to measure? first choose a filter: [Count , Total, Average, Median, Min, Max, Ratios, Funnel ssCount, Percentage, Day 30 Growth, Moving Average 30 Days, Moving Average 7 Days, Monthly Growth], then choose an options for the chossen filter: ["TotalOption", "CountOption", "AverageOption", "MovingAverage30DayOption", "MovingAverage7DayOption", "MedianOption", "MinMaxOption", "MaxOption", "RatiosOption", "PercentageOption", "RetentionOption", "Day30GrowthOption", "MonthlyGrowthOption"];
 
-  "filters to apply": {
-    "Filter 1": ["Date", "Chain Name", "Transaction Hash", "Transaction Sender", "Transaction Recipient", "Event Emitter Address", "Event Hash", "Event Label", "Retention Cohort Month", "Retention Month Number"],
-    "filter 2": "filter 2": ["equals", "does not equal", "in date range", "not in date range", "after date", "before date", "start with", "end with"],
-  }
 
-  "group the data by": ["Chain Name", "Transaction Hash", "Transaction Sender", "Transaction Recipient", "Event Emitter Address", "Event Hash", "Event Label", "Retention Cohort Month", "Retention Month Number"]
-```
+What time period would you like to analyze? choose a filter: ["This Month", "Today", "Yesterday", "This Week", "This Quarter", "This Year", "Last 7 Days", "Last 30 Days", "Last Week", "Last Month", "Last 3 month", "Last 6 month", "Last Quarter", "Last Year"]   Aggregated By: ["Second", "Minute", "Hour", "Day", "Week", "Month", "Quarter", "Year"];
+
+
+What chain would you like to analyze? choose a filter: ["Bitcoin", "Ethereum", "Polygon", "BNB Smart Chain (BSC)", "Avalanche C-Chain", "Fantom", "Moonbeam", "Moonriver", "Rootstock", "Arbitrum", "Palm", "Nervos Godwoken", "Axie/Ronin", "Evmos", "Astar", "Harmony", "Cronos", "Aurora", "Oasis", "Boba Ethereum", "Polygon Mumbai Testnet", "Avalanche Fuji Testnet", "Moonbeam Moonbase Alpha Testnet", "Rootstock Testnet", "Arbitrum Testnet", "Fantom Testnet", "Palm Testnet", "Nervos Godwoken Testnet", "Evmos Testnet", "Shiden", "Harmony Testnet", "Aurora Testnet", "Scroll L2 Testnet", "Scroll L1 Testnet", "DeFi Kingdoms", "Swimmer Network", "Boba Avalanche", "Boba Bobabeam", "Boba BNB", "Boba Rinkeby Testnet", "Boba Bobabase Testnet", "Boba BNB Testnet", "Boba Avalanche Testnet", "Gather", "Gather Testnet", "Optimism", "Calypso Hub", "SKALE", "Razor", "Dexalot", "CryptoBlades/Omnus", "Dexalot Testnet", "Metis", "Milkomeda A1", "Milkomeda A1 Devnet", "Milkomeda C1", "Milkomeda C1 Devnet", "Europa Hub", "Meter", "Meter Testnet", "Exorde", "Neon Testnet", "Calypso Hub Testnet", "Europa Hub Testnet", "Arbitrum Nova", "Canto", "BitTorrent", "BitTorrent Testnet", "Flare", "Flare Testnet", "Songbird", "Songbird Testnet", "KCC", "KCC Testnet", "Polygon zkEVM Testnet", "Linea Goerli Testnet", "Base Testnet", "Mantle Testnet", "Scroll Alpha Testnet", "Oasys", "Oasys Testnet", "Findora", "Findora Forge Testnet", "SX Network", "Oasis Sapphire", "Polygon zkEVM", "Horizen Yuma Testnet", "Horizen Gobi Testnet", "Nebula Gaming Hub"];
+
+
+What filters do you want to apply? filter 1:  ["Date", "Chain Name", "Transaction Hash", "Transaction Sender", "Transaction Recipient", "Event Emitter Address", "Event Hash", "Event Label", "Retention Cohort Month", "Retention Month Number"], filter 2: ["equals", "does not equal", "in date range", "not in date range", "after date", "before date", "start with", "end with", ">", ">=", "<", "<="], choose and option: [choose and option base on first 1 and filter 2]
+
+What do you want to group the data by? choose a filter: ["Chain Name", "Transaction Hash", "Transaction Sender", "Transaction Recipient", "Event Emitter Address", "Event Hash", "Event Label", "Retention Cohort Month", "Retention Month Number"]
+
+
+measuer options ------------------------
+    TotalOption": ["USD Gas Paid", "Native Gas Paid", "USD Native Token Transfer", "Native Token Transfer", "ERC 20 Token Transfer"],
+    CountOption": ["Rows", "Transactions", "Unsuccessful Transactions", "New Addresses", "Existing Addresses", "Transactions From", "Transactions To", "Active Addresses", "Active ERC 20 Addresses"],
+    AverageOption": ["USD Gas Paid", "Native Gas Paid", "USD Native Token Transfer", "Native Token Transfer", "ERC 20 Token Transfer", "Block Time", "DAU", "WAU"],
+    MovingAverage30DayOption": ["Transaction Count", "Active Addresses", "Total USD Gas Paid", "Average USD Gas Paid", "Total ERC 20 Token Transfer", "Average ERC 20 Token Transfer"],
+    MovingAverage7DayOption": ["Transaction Count", "Active Addresses", "Total USD Gas Paid", "Average USD Gas Paid"],
+    MedianOption": ["USD Gas Paid", "Native Gas Paid", "USD Native Token Transfer", "Native Token Transfer"],
+    MinMaxOption": ["USD Gas Paid", "Native Gas Paid", "USD Native Token Transfer", "Native Token Transfer"],
+    MaxOption": ["USD Gas Paid", "Native Gas Paid", "USD Native Token Transfer", "Native Token Transfer", "Date", "Latency In Minutes"],
+    RatiosOption": ["Transactions Per Active Address", "USD Gas Paid Per Transaction", "USD Gas Paid Per Address", "Transactions Per Second", "Stickiness Ratio", "Days Active Per User"],
+    PercentageOption": ["Active Addresses Selling NFTs", "Active Addresses Buying NFTs", "Active Addresses Trading On A DEX", "Transactions From NFT Sales", "Transactions From DEX Trades", "Transactions failing", "Gas Limit Utilisation"],
+    RetentionOption": ["Cohort Size", "Retention Rate"],
+    Day30GrowthOption": ["Transaction Count", "New Addresses", "Transaction Senders", "Transaction Recipients", "Active Addresses", "Native Token USD Transfer", "Total Gas Paid", "Average Gas Paid"],
+    MonthlyGrowthOption": ["Transaction Count", "New Addresses", "Transaction sender", "Transactions To", "Active Addresses", "Native Token USD Transfer", "Total Gas Paid", "Average Gas Paid"]
+
+models description --------------------
+Chain GDP Model: This model measures the health and performance of over 100 blockchain networks, akin to a country's GDP, providing metrics like transactions per second, block time, active users, gas usage, and more, primarily aimed at blockchain ecosystem governance bodies and analysts.
+
+DEX Model (Swap Land): This model monitors trading activity across 80+ decentralized exchanges (DEXs) on 24 blockchains, tracking metrics like average trade size, TVL, and total volume, targeting investors and analysts in the DeFi space.
+
+JPEG Analysis Model: This model observes sales across 40+ NFT marketplaces on 18 blockchains, offering metrics like sales count, sales volume, average trade size, and more, aimed primarily at NFT investors and marketplace operators.
+
+Lending Model: The Lending model monitors the lending and borrowing activities across various lending protocols, providing metrics such as outstanding loans, interest rates, default rates etc., targeting investors, risk managers, and operators in DeFi lending platforms.
+
+Token Balances Model: This model tracks the balances of various tokens across different blockchains, offering insights into distribution and concentration of tokens, primarily aimed at token holders, investors, and blockchain projects.
+
+Swap Land Model: Similar to the DEX model, this model focuses on analyzing swap activities across decentralized exchanges, providing insights into swap count, swap volume, buying and selling pressure, liquidity flows, etc., intended for investors, DEX operators, and DeFi analysts.
+
 
 ## Dex Model
 What model would you like to use? choose a filter: [Chain Gdp, Dex, Futures, Jpeg Analysis, Lending, Token Balances];
