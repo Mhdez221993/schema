@@ -139,3 +139,7 @@ Options------------------------------------
 ## Swap Land
 ## Token Dog Mode
 ## Token Balances
+
+# Links
+
+* [Etherscan usdc/weth](https://etherscan.io/address/0x397ff1542f962076d0bfe58ea045ffa2d347aca0)
