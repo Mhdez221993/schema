@@ -57,14 +57,17 @@ DIMENSIONS
   DEX Version: Pivots results via the aggregator involved in the event (e.g Uniswap V2, Uniswap V3, etc).
   Event: Pivots results via the event taking place (e.g swap, add liquidity, etc).
   Funnel Events:
-                Event One: The "Event One" dimension is primarily used as filter. It allows you to define the first event within your funnel analysis (e.g buy, sell, add liquidity, etc).
-                Event Two: The "Event Two" dimension is primarily used as filter. It allows you to define the second event within your funnel analysis (e.g buy, sell, add liquidity, etc).
-                Event Three: The "Event Three" dimension is primarily used as filter. It allows you to define the third event within your funnel analysis (e.g buy, sell, add liquidity, etc).
-                Event Four: The "Event Four" dimension is primarily used as filter. It allows you to define the fourth event within your funnel analysis (e.g buy, sell, add liquidity, etc).
-  Funnel Label
-  Pair Address
-  Pair Ticker
-  Protocol Name
+      Event One: The "Event One" dimension is primarily used as filter. It allows you to define the first event within your funnel analysis (e.g buy, sell, add liquidity, etc).
+      Event Two: The "Event Two" dimension is primarily used as filter. It allows you to define the second event within your funnel analysis (e.g buy, sell, add liquidity, etc).
+      Event Three: The "Event Three" dimension is primarily used as filter. It allows you to define the third event within your funnel analysis (e.g buy, sell, add liquidity, etc).
+      Event Four: The "Event Four" dimension is primarily used as filter. It allows you to define the fourth event within your funnel analysis (e.g buy, sell, add liquidity, etc).
+  Funnel Label:
+      Events Within Time Window Day: The "Events By Day" dimmension is used to pivot the funnel analysis by the events that take place within a 24h window. This dimension can also be used as a filter to select the exact number of events that take place within the 24h window. Always pair this dimension with the "Funnel Count Addresses" measure.
+      Events Within Time Window Second: The "Events By Second" dimmension is used to pivot the funnel analysis by the events that take place within 1 second window. This dimension can also be used as a filter to select the exact number of events that take place within the 1 second window. Always pair this dimension with the "Funnel Count Addresses" measure.
+      Events Within Time Window Week: The "Events By Week" dimmension is used to pivot the funnel analysis by the events that take place within a 7 days window. This dimension can also be used as a filter to select the exact number of events that take place within the 7 days window. Always pair this dimension with the "Funnel Count Addresses" measure.
+  Pair Address: pivots result via contract address of a pair (e.g 0x397FF1542f962076d0BFE58eA045FfA2d347ACa0, etc).
+  Pair Ticker: Pivots results via the pair getting traded (e.g WETH / USDC, AAVE / WETH, etc).
+  Protocol Name: Pivots results via the protocol name (e.g Uniswap, Sushiswap, etc).
   Recipient
   Sender
   Token Address
