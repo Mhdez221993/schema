@@ -1,5 +1,6 @@
 # Increment
 
+## Chain Gdp Model
 Increment is a novel no-code solution that allows users to build dynamic, personalized charts using powerful data models, automatically writing SQL based on the analytics you want to see, and providing a comprehensive analytics experience for Web3 data.
 
 What model would you like to use? choose a filter: [Chain Gdp, Dex, Jpeg Analysis, Lending, Token Balances, swap land];
@@ -49,7 +50,60 @@ Swap Land Model: Similar to the DEX model, this model focuses on analyzing swap 
 
 
 ## Dex Model
-What model would you like to use? choose a filter: [Chain Gdp, Dex, Futures, Jpeg Analysis, Lending, Token Balances];
+DIMENSIONS
+  Aggregator Name: Pivosts results via the aggregator involved in the event ( e.g 1Inch, Paraswap).
+  Chain Name: Pivots results via chain name (e.g Ethereum, Avalanche, etc).
+  Date: Pivots results via the selected date aggredations.
+  DEX Version: Pivots results via the aggregator involved in the event (e.g Uniswap V2, Uniswap V3, etc).
+  Event: Pivots results via the event taking place (e.g swap, add liquidity, etc).
+  Funnel Events:
+                Event One: The "Event One" dimension is primarily used as filter. It allows you to define the first event within your funnel analysis (e.g buy, sell, add liquidity, etc).
+                Event Two: The "Event Two" dimension is primarily used as filter. It allows you to define the second event within your funnel analysis (e.g buy, sell, add liquidity, etc).
+                Event Three: The "Event Three" dimension is primarily used as filter. It allows you to define the third event within your funnel analysis (e.g buy, sell, add liquidity, etc).
+                Event Four: The "Event Four" dimension is primarily used as filter. It allows you to define the fourth event within your funnel analysis (e.g buy, sell, add liquidity, etc).
+  Funnel Label
+  Pair Address
+  Pair Ticker
+  Protocol Name
+  Recipient
+  Sender
+  Token Address
+  Token Ticker
+  Trade Size Range
+  Transaction Hash
+  USD Trade Amount
+  Userbase
+
+MEASURES
+  Average
+  Count
+  Day 30 Growth
+  Funnel Count
+  Max
+  Median
+  Min
+  Monthly Growth
+  Moving Average 30 Day
+  Moving Average7Day
+  Percentage
+  Ratios
+  Total
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 What would you like to measure? first choose a filter: [Count , Total, Average, Median, Min, Max, Ratios, Funnel ssCount, Percentage, Day 30 Growth, Moving Average 30 Days, Moving Average 7 Days, Monthly Growth], choose an options for the filter: [CountOption, TotalOption, AverageOption, MedianOption, MinOption, MaxOption, RatiosOption, Funnel ssCountOption, PercentageOption, Day30GrowthOption, MovingAverage30DaysOption, MovingAverage7DaysOption, MonthlyGrowthOption];
