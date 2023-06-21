@@ -61,10 +61,12 @@ DIMENSIONS
       Event Two: The "Event Two" dimension is primarily used as filter. It allows you to define the second event within your funnel analysis (e.g buy, sell, add liquidity, etc).
       Event Three: The "Event Three" dimension is primarily used as filter. It allows you to define the third event within your funnel analysis (e.g buy, sell, add liquidity, etc).
       Event Four: The "Event Four" dimension is primarily used as filter. It allows you to define the fourth event within your funnel analysis (e.g buy, sell, add liquidity, etc).
+
   Funnel Label:
       Events Within Time Window Day: The "Events By Day" dimmension is used to pivot the funnel analysis by the events that take place within a 24h window. This dimension can also be used as a filter to select the exact number of events that take place within the 24h window. Always pair this dimension with the "Funnel Count Addresses" measure.
       Events Within Time Window Second: The "Events By Second" dimmension is used to pivot the funnel analysis by the events that take place within 1 second window. This dimension can also be used as a filter to select the exact number of events that take place within the 1 second window. Always pair this dimension with the "Funnel Count Addresses" measure.
       Events Within Time Window Week: The "Events By Week" dimmension is used to pivot the funnel analysis by the events that take place within a 7 days window. This dimension can also be used as a filter to select the exact number of events that take place within the 7 days window. Always pair this dimension with the "Funnel Count Addresses" measure.
+
   Pair Address: pivots result via contract address of a pair (e.g 0x397FF1542f962076d0BFE58eA045FfA2d347ACa0, etc).
   Pair Ticker: Pivots results via the pair getting traded (e.g WETH / USDC, AAVE / WETH, etc).
   Protocol Name: Pivots results via the protocol name (e.g Uniswap, Sushiswap, etc).
@@ -137,8 +139,16 @@ MEASURES
       USD Liquidity Removed: The median USD liquidity removed. This metric is calculated by findin the 50th percentile of the absoulte value of amount0_usd where the event is a "remove_liquidity".
       USD Trade Size: The median USD trade size. This metric is calculated by finding the 50th percentile of the absolute value of amount0_usd where the event is a "swap".
 
-  Min
+  Min:
+      Gas Paid Native: The minimun gas paid in the native token. This metric is calculated by finding the smallest gas_eth value for non-null transaction hashes.
+      Gas Paid USD: The minimun gas paid in USD. This metric is calculated by finding the smallest gas_usd value for non-null transaction hashes.
+      USD Liquidity Added: The minimun USD liquidity added. This metric is calculated by finding the smallest absolute valued of amount0_usd where the event is an "add_liquidity".
+      USD Liquidity Removed: The minimun USD liquidity removed. This metric is calculated by finding the smallest absolute value of amount0_usd where the event is an "remove_liquidity".
+      USD Trade Size: The minimun USD trade size. This metric is calculated by finding the smallest absolute value of amount0_usd where the event is a "swap".
+
   Monthly Growth
+
+
   Moving Average 30 Day
   Moving Average7Day
   Percentage
