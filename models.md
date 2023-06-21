@@ -147,7 +147,8 @@ MEASURES
       USD Trade Size: The minimun USD trade size. This metric is calculated by finding the smallest absolute value of amount0_usd where the event is a "swap".
 
   Monthly Growth
-
+      Active Pairs: The percentage growth in the number of active trading pairs on a monthly basis. This metric is calculated by comparing the total number of active pairs from the current month to the previous month.
+      Average Trade Size: The persentage growth in the average trade size on a monthly basis. this metric is calculated by comparing the average trade volume from the current month to the previous month.
 
   Moving Average 30 Day
   Moving Average7Day
