@@ -149,6 +149,8 @@ MEASURES
   Monthly Growth
       Active Pairs: The percentage growth in the number of active trading pairs on a monthly basis. This metric is calculated by comparing the total number of active pairs from the current month to the previous month.
       Average Trade Size: The persentage growth in the average trade size on a monthly basis. this metric is calculated by comparing the average trade volume from the current month to the previous month.
+      Average USD Gas Paid: The percentage growth in the average USD gas paid per transaction on a monthly basis. This metric is calculated by comparing the average gas cost in USD from the current month to the previous month.
+      New Pairs Created: The percentage growth in the number of new trading pairs created on a monthly basis. This metric is calculated by comparing the total number of new pairs from the current month to the previous month.
 
   Moving Average 30 Day
   Moving Average7Day
