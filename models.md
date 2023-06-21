@@ -111,6 +111,10 @@ MEASURES
       Average Trade Size: The percentage growth in the average trade size over the past 30 days. This metric is calculated by comparing the average trade volumen from the current day to 30 days prios.
       Average USD Gas Paid: The percentage growth in the average USD gas paid per trnasaction over the pas 30 days. This metric is calculated by comparing the average gas cost in USD from the current day to 30 days prior.
       New Pairs Created: The percentage growth in the number of new trading pairs created over the past 30 days. This metric is calculated by compring the total number of new paris from the current day to 30 days prior.
+      Total USD Gas Paid: The percentage growth in the total USD gas paid over the past 30 days. This metric is calculated by comparing the total gas cost in USD from the current day to 30 days prior.
+      Total USD Trading Volume: The percentage growth in the total USD trading volume over the past 30 days. This metric is calculated by compring the total volume from the current day to 30 days prior.
+      Traders: The persentage growth in the number of traders over the past 30 days. This metric is calculated by comparing the total number of traders from the current day to 30 days prior.
+      Trades: The persentage  growth in the number of trades over the past 30 days. This metric is calculated by comparing the total number of trades from the current day to 30 days prior.
 
   Funnel Count
   Max
