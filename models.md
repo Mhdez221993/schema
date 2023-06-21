@@ -72,9 +72,9 @@ DIMENSIONS
   Sender: Pivots results via the sender of the event. Typically, the sender column stores the addresses adding or removing liquidity.
   Token Address: Pivots results via the token address getting bought or sold (e.g WETH, AAVE, etc).
   Token Ticker: Pivots results via the token getting bought or sold (e.g WETH, AAVE, etc).
+  Trade Size Range: Pivots results via different trade size ranges (e.g 100-1000, 100001-20000, etc).
+  Transaction Hash: Pivots result via transaction hash (e.g, 0x9f240c0dbeba0008e93a30c76db1857dee9d2239e75b46690e9ccc012bc68055, etc).
 
-  Trade Size Range
-  Transaction Hash
   USD Trade Amount
   Userbase
 
