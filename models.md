@@ -85,8 +85,10 @@ MEASURES
       DAU: The average daily active users (DAU). This metric is calculated by averaging the unique daily active users.
       Gas Paid Native: The average gas paid in native tokens. This metric is calculated by taking the average of the gas_eth values for non-null transactions hashes.
       Token Price: The average token price. This metric is calculated by taking the average of the daily token prices from DEX trades.
-
-
+      USD Liquidity Added: The average USD liquidity added. This metric is calculated by taking the average of the absolute value of amount0_usd where the event is an "add_liquidity".
+      USD Liquidity Removed: The average USD liquidity removed. This metric is calculated by taking the average of the absolute value of amount0_usd where the event is a "remove_liquidity".
+      USD Trade Size: The average USD trade size. This metric is calculated by taking the average of the absolute value of amount0_usd whre the event is a "swap".
+      WAU: The average weekly active users (WAU). This metric is calculated by averaging the unique weekly active users.
   Count
   Day 30 Growth
   Funnel Count
