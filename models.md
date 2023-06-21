@@ -157,6 +157,9 @@ MEASURES
       Trades: The percentage growth in the number of trades on a monthly basis. This metric is calculated by comparing the total number of trades from the current month to the previous month.
 
   Moving Average 30 Day
+      Active Pairs: The 30-day moving average of the number of active pairs. This metric is calculated by taking the average of the daily active pairs over a rolling 30-day window.
+      Average Trade Size: The 30-day moving average DEX trade size. This metric is calculated by taking the average of the daily average DEX trade size over a rolling 30-day window.
+
   Moving Average7Day
   Percentage
   Ratios
