@@ -102,6 +102,8 @@ MEASURES
       New DEX Events Users:
       New DEX Protocol Users:
       New Pair Created: The total number of new pairs created. This metric is calculated by counting the occurrences of the "pair_created" event associated with a transaction hash.
+      Protocols: The total number of unique protoclos. This metric is calculated by counting the unique protocol names.
+      Remove Liquidity Events: The total number of remove liquidity events. This metricis calculated by counting the occurrences of the "remove_liquidity" event associated with a transaction hash.
 
   Day 30 Growth
   Funnel Count
