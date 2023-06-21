@@ -177,7 +177,22 @@ MEASURES
       Transaction Count: The 7-day moving average of the daily transaction count. This metric is calculated by taking the average of the number of transactions over a rolling 7-day window.
 
   Percentage
+      Traders Using Aggregators:
+      Traders Through Aggregators:
+
   Ratios
+      Aggregators Used Per Trade: The average number of aggregators use per trade. This metric is calculated by averaging the unique number of aggregators used by each trader, considering only "swap" events.
+      Days Active Per Active Address: The average number of days active per active address. This metric is calculated by averaging the unique number of days each address is active.
+      Days Active Per Trader: The average number of days active per trader. This metric is caculated by averaging the unique number of days each trader is active, considering only "swap" events.
+      DEXs Used Per Trader: The average number of decentralized exchanges (DEXs) used per trader. This metric is calculated by averaging the unique number of DEXs used by each trader, considering only "swap" events.
+      Net Liquidity Added: The ratio of liquidy added to liquidity removed. This metric is caluculated by divinding the total liquidity added volume by the total liquidity removed volume.
+      Pairs Traded Per Trader: The average number of trading pairs per trader. This metric is calculated by averaging the unique number of paris traded by each trader, considering only "swap" events.
+      Stickiness Ratio: The stickiness ration is calculated by dividing the average daily active users by the total number of active address.
+      Trades Per Trader: The average number of trades per trader. This metric is calculated by dividing the total number of trades by the total number of traders.
+      Trades Per Transaction: The average number of trades per transaction. This metric is calculated by dividing the total number of trades by the total number of transactions.
+      USD Gas Paid Per Trader: The average USD gas const per trader. This metric is calculated by dividing the total gas cost in USD by the total number of traders.
+      Volume Per Trader: The average trading volume per trader. This metric is calculated by dividing the total trading volume by the total number of traders.
+
   Total
 
 ## Futures
