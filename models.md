@@ -135,6 +135,7 @@ MEASURES
       Gas Paid USD:  The median gas paid in USD. This metric is calculated by finding the 50th percentile of the gas_usd values for non-null transactions hashes.
       USD Liquidity Added: The median USD liquidity added. This metric is calculated by finding the 50th percentile of the absolute value of amounth0_usd where the event is a "add_liquidity".
       USD Liquidity Removed: The median USD liquidity removed. This metric is calculated by findin the 50th percentile of the absoulte value of amount0_usd where the event is a "remove_liquidity".
+      USD Trade Size: The median USD trade size. This metric is calculated by finding the 50th percentile of the absolute value of amount0_usd where the event is a "swap".
 
   Min
   Monthly Growth
