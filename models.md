@@ -89,7 +89,10 @@ MEASURES
       USD Liquidity Removed: The average USD liquidity removed. This metric is calculated by taking the average of the absolute value of amount0_usd where the event is a "remove_liquidity".
       USD Trade Size: The average USD trade size. This metric is calculated by taking the average of the absolute value of amount0_usd whre the event is a "swap".
       WAU: The average weekly active users (WAU). This metric is calculated by averaging the unique weekly active users.
-  Count
+  Count:
+      Active Addresses: The total number of unique active addresses. This metric is calculated by counting the unique recipient and sender addresses.
+      Active Pairs: The total number of unique active pairs. This metric is calculated by counting the unique pairs addresses.
+
   Day 30 Growth
   Funnel Count
   Max
