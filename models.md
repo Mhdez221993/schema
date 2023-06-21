@@ -75,8 +75,9 @@ DIMENSIONS
   Trade Size Range: Pivots results via different trade size ranges (e.g 100-1000, 100001-20000, etc).
   Transaction Hash: Pivots result via transaction hash (e.g, 0x9f240c0dbeba0008e93a30c76db1857dee9d2239e75b46690e9ccc012bc68055, etc).
   USD Trade Amount: Pivots results via the USD volume traded. Typically, this dimension is used as a means to filter the query; for example, count the number of swaps over $100 (a.k.a USD Trade Amount > 100).
-
   Userbase:
+      Protocol Name: The 'Userbase: Protocol Name' dimention is used for filter your query; it shlould not be a dimension you group results by. This fiter takes protocol names ans an argument (e.g unishwap, sushiswap, etc) and filters all measures by addresses that have used that protocol/s.
+      Total Trading Volume: The 'Userbase: Total Trading Volume' dimention is used for filter your query; it shlould not be a dimension you group results by. This fiter enables you to filter the query by addresses with a certain amount of trading volume over the lifetime of the address.
 
 MEASURES
   Average
