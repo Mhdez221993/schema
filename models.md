@@ -131,7 +131,10 @@ MEASURES
       USD Trade Size: The maximum USD trade size. This metric is calculated by finding the largest absolute value of amount0_usd for "swap" events.
 
   Median:
-
+      Gas Paid Native: The median gas paid in the native token. This metric is calculated by finding the 50th percentile of the gas_eth values for non-null transacion hashes.
+      Gas Paid USD:  The median gas paid in USD. This metric is calculated by finding the 50th percentile of the gas_usd values for non-null transactions hashes.
+      USD Liquidity Added: The median USD liquidity added. This metric is calculated by finding the 50th percentile of the absolute value of amounth0_usd where the event is a "add_liquidity".
+      USD Liquidity Removed: The median USD liquidity removed. This metric is calculated by findin the 50th percentile of the absoulte value of amount0_usd where the event is a "remove_liquidity".
 
   Min
   Monthly Growth
