@@ -159,6 +159,12 @@ MEASURES
   Moving Average 30 Day
       Active Pairs: The 30-day moving average of the number of active pairs. This metric is calculated by taking the average of the daily active pairs over a rolling 30-day window.
       Average Trade Size: The 30-day moving average DEX trade size. This metric is calculated by taking the average of the daily average DEX trade size over a rolling 30-day window.
+      Average USD Gas Paid: The 30-day moving average of the daily average gas fee from DEX transactions. This metric is calculated by taking the average of the daily average gas fee from DEX  transactions over a rolling 30-day window.
+      New Pair Created: The 30-day moving average of the number of new pairs created. This metric is calculated by taking the average of the daily new pair created over a rolling 30-day window.
+      Total USD Gas Paid: The 30-day moving average of daily USD gas paid from DEX transactions. This metric is calculated by taking the average of the daily USD gas apid from DEX transactions over a rolling 30-day window.
+      Total USD Trading Volume: The 30-day moving average of the daily trading volume. This metric is calculated by taking the average of the daily trading volume over a rolling 30-day windown.
+      Traders: The 30-day moving average of the daily trader count. This metric is calculated by taking the average of the number of daily traders over a rolliing 30-day window.
+      Trades: The 30-day moving average of the dailytransaction count. This metric is caluculated by taking the average of the number of transactinos over a rolling 30-day window.
 
   Moving Average7Day
   Percentage
