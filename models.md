@@ -115,9 +115,11 @@ MEASURES
       Total USD Trading Volume: The percentage growth in the total USD trading volume over the past 30 days. This metric is calculated by compring the total volume from the current day to 30 days prior.
       Traders: The persentage growth in the number of traders over the past 30 days. This metric is calculated by comparing the total number of traders from the current day to 30 days prior.
       Trades: The persentage  growth in the number of trades over the past 30 days. This metric is calculated by comparing the total number of trades from the current day to 30 days prior.
-
-  Funnel Count
-  Max
+  Funnel Count:
+      Addresses:
+  Max:
+      Date: The most recent signed_at timestamp
+      Gas Paid Native: The maximun ghas paid in the native token. This metric is calculated by finding the largest gas_eth value for non-null transaction hashes.
   Median
   Min
   Monthly Growth
