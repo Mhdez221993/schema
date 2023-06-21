@@ -94,6 +94,8 @@ MEASURES
       Active Pairs: The total number of unique active pairs. This metric is calculated by counting the unique pairs addresses.
       Active Tokens: The total number of unique active tokens. This metric is calculated by counting the unique token addresses for both token0 and token1.
       Active Traders: The total of unique traders. This metric is calculated by couning the unique recipient addresses where the event is a 'swap'.
+      Add Liquidity Events: The total number of add liquidity events. This metric is calculated by counting the occurrences of the "add_liquidity" events associated with a transaction hash.
+      Addresses Adding Liquidity: The total number of unique addresses adding liquidity. This metric is calculated by counting the unique sender addresses where the event is an "add_liquidity".
 
   Day 30 Growth
   Funnel Count
