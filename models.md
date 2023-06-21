@@ -74,9 +74,9 @@ DIMENSIONS
   Token Ticker: Pivots results via the token getting bought or sold (e.g WETH, AAVE, etc).
   Trade Size Range: Pivots results via different trade size ranges (e.g 100-1000, 100001-20000, etc).
   Transaction Hash: Pivots result via transaction hash (e.g, 0x9f240c0dbeba0008e93a30c76db1857dee9d2239e75b46690e9ccc012bc68055, etc).
+  USD Trade Amount: Pivots results via the USD volume traded. Typically, this dimension is used as a means to filter the query; for example, count the number of swaps over $100 (a.k.a USD Trade Amount > 100).
 
-  USD Trade Amount
-  Userbase
+  Userbase:
 
 MEASURES
   Average
