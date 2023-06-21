@@ -151,6 +151,10 @@ MEASURES
       Average Trade Size: The persentage growth in the average trade size on a monthly basis. this metric is calculated by comparing the average trade volume from the current month to the previous month.
       Average USD Gas Paid: The percentage growth in the average USD gas paid per transaction on a monthly basis. This metric is calculated by comparing the average gas cost in USD from the current month to the previous month.
       New Pairs Created: The percentage growth in the number of new trading pairs created on a monthly basis. This metric is calculated by comparing the total number of new pairs from the current month to the previous month.
+      Total USD Gas Paid: The persentage growth in the total USD gas paid for transactions on a monthly basis. This metric is calculated by comparing the total gas const in USD from the current month to the previous month.
+      Total USD Trading Volume: The percentage growth in the total USD trading volume on a monthly basis. This metric is calculated by comparing the total volume from the current month to the previous month.
+      Traders: The persentage growth in the number of traders on a monthly basis. This metric is calculated by compring the total number of traders from the current month to the preious month.
+      Trades: The percentage growth in the number of trades on a monthly basis. This metric is calculated by comparing the total number of trades from the current month to the previous month.
 
   Moving Average 30 Day
   Moving Average7Day
