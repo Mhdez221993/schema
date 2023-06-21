@@ -92,6 +92,8 @@ MEASURES
   Count:
       Active Addresses: The total number of unique active addresses. This metric is calculated by counting the unique recipient and sender addresses.
       Active Pairs: The total number of unique active pairs. This metric is calculated by counting the unique pairs addresses.
+      Active Tokens: The total number of unique active tokens. This metric is calculated by counting the unique token addresses for both token0 and token1.
+      Active Traders: The total of unique traders. This metric is calculated by couning the unique recipient addresses where the event is a 'swap'.
 
   Day 30 Growth
   Funnel Count
