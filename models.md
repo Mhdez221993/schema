@@ -120,6 +120,11 @@ MEASURES
   Max:
       Date: The most recent signed_at timestamp
       Gas Paid Native: The maximun ghas paid in the native token. This metric is calculated by finding the largest gas_eth value for non-null transaction hashes.
+      Latency in Minutes All Chains: The number of minutes between the most recent signed_at timestamp in the dex and all_chains table.
+      Latency in Minutes Now: The number of minutes between the most recent signed_at timestamp and now.
+      USD Liquidity Added: The maximun USD liqidity added. This metric is calculated by finding the largest absolute value of amount0_usd for "add_liquidity" events.
+      USD Liquidity Removed: The maximun USD liquidity removed. This metric is calculated by findiing the largest absolute value of amount0_usd for "remove_liquidity" events.
+
   Median
   Min
   Monthly Growth
