@@ -70,9 +70,9 @@ DIMENSIONS
   Protocol Name: Pivots results via the protocol name (e.g Uniswap, Sushiswap, etc).
   Recipient: Pivots results via the recipient of the event, Typically, the recipient column stores the trader's addresses, however, it can also stroe the aggregator's address.
   Sender: Pivots results via the sender of the event. Typically, the sender column stores the addresses adding or removing liquidity.
+  Token Address: Pivots results via the token address getting bought or sold (e.g WETH, AAVE, etc).
+  Token Ticker: Pivots results via the token getting bought or sold (e.g WETH, AAVE, etc).
 
-  Token Address
-  Token Ticker
   Trade Size Range
   Transaction Hash
   USD Trade Amount
