@@ -89,6 +89,7 @@ MEASURES
       USD Liquidity Removed: The average USD liquidity removed. This metric is calculated by taking the average of the absolute value of amount0_usd where the event is a "remove_liquidity".
       USD Trade Size: The average USD trade size. This metric is calculated by taking the average of the absolute value of amount0_usd whre the event is a "swap".
       WAU: The average weekly active users (WAU). This metric is calculated by averaging the unique weekly active users.
+
   Count:
       Active Addresses: The total number of unique active addresses. This metric is calculated by counting the unique recipient and sender addresses.
       Active Pairs: The total number of unique active pairs. This metric is calculated by counting the unique pairs addresses.
@@ -106,6 +107,7 @@ MEASURES
       Remove Liquidity Events: The total number of remove liquidity events. This metricis calculated by counting the occurrences of the "remove_liquidity" event associated with a transaction hash.
       Trades: The total number of trades. This metric is calculated by counting the occurrences of the "swap" event associated with a transaction hash.
       Transactions: The total number of transactions; use this measure with the event dimention to compare the number of events taking place (e.g swap, add liquidity, etc). This metreic is calculated by counting the number of trnasaction hashes.
+
   Day 30 Growth:
       Actice Pairs: The percentage growth in the number of active trading paris over the past 30 days. This metric is calculated by comparing the total number of active pairs from the current day to 30 days prios.
       Average Trade Size: The percentage growth in the average trade size over the past 30 days. This metric is calculated by comparing the average trade volumen from the current day to 30 days prios.
@@ -115,8 +117,10 @@ MEASURES
       Total USD Trading Volume: The percentage growth in the total USD trading volume over the past 30 days. This metric is calculated by compring the total volume from the current day to 30 days prior.
       Traders: The persentage growth in the number of traders over the past 30 days. This metric is calculated by comparing the total number of traders from the current day to 30 days prior.
       Trades: The persentage  growth in the number of trades over the past 30 days. This metric is calculated by comparing the total number of trades from the current day to 30 days prior.
+
   Funnel Count:
       Addresses:
+
   Max:
       Date: The most recent signed_at timestamp
       Gas Paid Native: The maximun ghas paid in the native token. This metric is calculated by finding the largest gas_eth value for non-null transaction hashes.
@@ -124,8 +128,11 @@ MEASURES
       Latency in Minutes Now: The number of minutes between the most recent signed_at timestamp and now.
       USD Liquidity Added: The maximun USD liqidity added. This metric is calculated by finding the largest absolute value of amount0_usd for "add_liquidity" events.
       USD Liquidity Removed: The maximun USD liquidity removed. This metric is calculated by findiing the largest absolute value of amount0_usd for "remove_liquidity" events.
+      USD Trade Size: The maximum USD trade size. This metric is calculated by finding the largest absolute value of amount0_usd for "swap" events.
 
-  Median
+  Median:
+
+
   Min
   Monthly Growth
   Moving Average 30 Day
