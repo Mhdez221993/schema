@@ -108,6 +108,9 @@ MEASURES
       Transactions: The total number of transactions; use this measure with the event dimention to compare the number of events taking place (e.g swap, add liquidity, etc). This metreic is calculated by counting the number of trnasaction hashes.
   Day 30 Growth:
       Actice Pairs: The percentage growth in the number of active trading paris over the past 30 days. This metric is calculated by comparing the total number of active pairs from the current day to 30 days prios.
+      Average Trade Size: The percentage growth in the average trade size over the past 30 days. This metric is calculated by comparing the average trade volumen from the current day to 30 days prios.
+      Average USD Gas Paid: The percentage growth in the average USD gas paid per trnasaction over the pas 30 days. This metric is calculated by comparing the average gas cost in USD from the current day to 30 days prior.
+      New Pairs Created: The percentage growth in the number of new trading pairs created over the past 30 days. This metric is calculated by compring the total number of new paris from the current day to 30 days prior.
 
   Funnel Count
   Max
