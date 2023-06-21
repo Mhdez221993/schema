@@ -49,7 +49,7 @@ Token Balances Model: This model tracks the balances of various tokens across di
 Swap Land Model: Similar to the DEX model, this model focuses on analyzing swap activities across decentralized exchanges, providing insights into swap count, swap volume, buying and selling pressure, liquidity flows, etc., intended for investors, DEX operators, and DeFi analysts.
 
 
-## Dex Model
+## Dex Model's filters
 DIMENSIONS
   Aggregator Name: Pivosts results via the aggregator involved in the event ( e.g 1Inch, Paraswap).
   Chain Name: Pivots results via chain name (e.g Ethereum, Avalanche, etc).
@@ -68,8 +68,9 @@ DIMENSIONS
   Pair Address: pivots result via contract address of a pair (e.g 0x397FF1542f962076d0BFE58eA045FfA2d347ACa0, etc).
   Pair Ticker: Pivots results via the pair getting traded (e.g WETH / USDC, AAVE / WETH, etc).
   Protocol Name: Pivots results via the protocol name (e.g Uniswap, Sushiswap, etc).
-  Recipient
-  Sender
+  Recipient: Pivots results via the recipient of the event, Typically, the recipient column stores the trader's addresses, however, it can also stroe the aggregator's address.
+  Sender: Pivots results via the sender of the event. Typically, the sender column stores the addresses adding or removing liquidity.
+
   Token Address
   Token Ticker
   Trade Size Range
