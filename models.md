@@ -96,6 +96,12 @@ MEASURES
       Active Traders: The total of unique traders. This metric is calculated by couning the unique recipient addresses where the event is a 'swap'.
       Add Liquidity Events: The total number of add liquidity events. This metric is calculated by counting the occurrences of the "add_liquidity" events associated with a transaction hash.
       Addresses Adding Liquidity: The total number of unique addresses adding liquidity. This metric is calculated by counting the unique sender addresses where the event is an "add_liquidity".
+      Addresses Removing Liquidity: The total number of unique addresses removing liquidity. This metric is calculated by counting the unique recipient addresses where the event is a "remove _liquidity".
+      Aggregator Traders: The total number of unique traders using an aggregator. This metric is calculated by counting the unique recipient addresses where the event is a "swap" and an aggregator was used.
+      Aggregator Trades: The total number of trades through an aggregator. This metric is caculated by counting the number of swap events where and aggregator was used.
+      New DEX Events Users:
+      New DEX Protocol Users:
+      New Pair Created: The total number of new pairs created. This metric is calculated by counting the occurrences of the "pair_created" event associated with a transaction hash.
 
   Day 30 Growth
   Funnel Count
