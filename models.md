@@ -84,6 +84,8 @@ MEASURES
       Average Gas Paid USD: The average gas paid in USD. This metric is calculated by taking the average of the gas_usd values for non-null transaction hashes.
       DAU: The average daily active users (DAU). This metric is calculated by averaging the unique daily active users.
       Gas Paid Native: The average gas paid in native tokens. This metric is calculated by taking the average of the gas_eth values for non-null transactions hashes.
+      Token Price: The average token price. This metric is calculated by taking the average of the daily token prices from DEX trades.
+
 
   Count
   Day 30 Growth
