@@ -52,11 +52,19 @@ CREATE TABLE dex (
 );
 
 /*
+ DEX Table Coverage:
+ 
+ Total Chains 13
+ Total DEXs 80
+ Total Pairs 1,878,964
+ Total Trades 3,594,991,700
+ Total Tokens 1,652,424
+ Total Aggregators 8
+ 
  
  DEX Trades Data Dictionary:
  
  chain_name: Stores the chain name.
- 
  chain_id: A unique number that acts as a numerical identifier for each chain.
  block_height: Stores the block height.
  signed_at: Stores the timestamp.
