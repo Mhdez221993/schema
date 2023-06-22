@@ -194,6 +194,16 @@ MEASURES
       Volume Per Trader: The average trading volume per trader. This metric is calculated by dividing the total trading volume by the total number of traders.
 
   Total
+      Gas Paid Native: The total gas paid in native tokens. This metric is calculated by summing the gas_eth values for non-null transaction hashes.
+      Total Gas Paid USD: The total gas paid in USD. This metric is calculated by summing the gas_usd values for non-null transacion hashes.
+      USD Aggregator Valume: The total USD trading volume through aggregators. This metric is calculated by summing the absolute value of amount0_usd where aggregator_name is not empty.
+      USD Buying Volume: The total USD buying volume - work best when you select the "Token" dimension and filter by a particular token. This metric is calculated by summing the absolute value of amount0_usd when your selected token is token0 and amount0_usd is positive (i.e USD amount bought). The The same process is then applied to ken1 and the two values are added together.
+      USD Liquidity Added: The total USD liquidity added. This metric is calculated by summing the absolute value of amount0_usd where the event is an "add_liquidity".
+      USD Liquidity Removed: The total USD liquidity removed. This metric is calculated by summing the absolute value of amount0_usd where the event is a "remove_liquidity".
+      USD Net Liquidity Added: The total USD liquidity added. This metric is calculated by subtracting the total USD liquidity removde from the total USD liquidty added.
+      USD Net Trading Volume: The total net USD volume. This metric is calculated by subtracting the total USD buying volume from the total USD selling volume.
+      USD Selling Volume: The total USD selling volume - work best when you select the "Token" dimmension and filter by a particular token. This metric is calculated by summing the absolute value for amoun0_usd when your selected token is token0 and amount0_usd is negative (i.e USD amount sold). The same process is then applied to token1 and the two valaues are added together.
+      USD Trading Volume: The total USD trading volume. This metric is calculated by summing the absolute value of amount0_usd where the event is a "swap".
 
 ## Futures
 ```shell
