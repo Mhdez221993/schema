@@ -49,7 +49,15 @@ Token Balances Model: This model tracks the balances of various tokens across di
 Swap Land Model: Similar to the DEX model, this model focuses on analyzing swap activities across decentralized exchanges, providing insights into swap count, swap volume, buying and selling pressure, liquidity flows, etc., intended for investors, DEX operators, and DeFi analysts.
 
 
-## Dex Model's filters
+## Dex Model's filters (Dex model is made up of DIMENSIONS and MEASURES)
+ DEX Table Coverage:
+    Total Chains 13
+    Total DEXs 80
+    Total Pairs 1,878,964
+    Total Trades 3,594,991,700
+    Total Tokens 1,652,424
+    Total Aggregators 8
+
 DIMENSIONS
   Aggregator Name: Pivosts results via the aggregator involved in the event ( e.g 1Inch, Paraswap).
   Chain Name: Pivots results via chain name (e.g Ethereum, Avalanche, etc).
@@ -204,6 +212,189 @@ MEASURES
       USD Net Trading Volume: The total net USD volume. This metric is calculated by subtracting the total USD buying volume from the total USD selling volume.
       USD Selling Volume: The total USD selling volume - work best when you select the "Token" dimmension and filter by a particular token. This metric is calculated by summing the absolute value for amoun0_usd when your selected token is token0 and amount0_usd is negative (i.e USD amount sold). The same process is then applied to token1 and the two valaues are added together.
       USD Trading Volume: The total USD trading volume. This metric is calculated by summing the absolute value of amount0_usd where the event is a "swap".
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Dex Model's filters (Dex model is made up of DIMENSIONS and MEASURES)
+ DEX Table Coverage: {
+    Total Chains: 13,
+    Total DEXs: 80,
+    Total Pairs: 1,878,964,
+    Total Trades: 3,594,991,700,
+    Total Tokens: 1,652,424,
+    Total Aggregators: 8,
+}
+
+Dex model: {
+    DIMENSIONS: {
+        Aggregator Name,
+        Chain Name,
+        Date,
+        DEX Version,
+        Event,
+        Funnel Events: [
+            Event One,
+            Event Two,
+            Event Three,
+            Event Four
+        ],
+
+        Funnel Label: [
+            Events Within Time Window Day,
+            Events Within Time Window Second,
+            Events Within Time Window Week
+        ],
+
+        Pair Address,
+        Pair Ticker,
+        Protocol Name,
+        Recipient,
+        Sender,
+        Token Address,
+        Token Ticker,
+        Trade Size Range,
+        Transaction Hash,
+        USD Trade Amount,
+        Userbase: [Protocol Name, Total Trading Volume]
+    },
+
+    MEASURES: {
+
+        Average: [
+            Average Gas Paid USD,
+            DAU,
+            Gas Paid Native,
+            Token Price,
+            USD Liquidity Added,
+            USD Liquidity Removed,
+            USD Trade Size,
+            WAU,
+        ],
+
+        Count: [
+            Active Addresses,
+            Active Pairs,
+            Active Tokens,
+            Active Traders,
+            Add Liquidity Events,
+            Addresses Adding Liquidity,
+            Addresses Removing Liquidity,
+            Aggregator Traders,
+            Aggregator Trades,
+            New DEX Events Users,
+            New DEX Protocol Users,
+            New Pair Created,
+            Protocols,
+            Remove Liquidity Events,
+            Trades,
+            Transactions,
+        ],
+
+        Day 30 Growth [
+            Actice Pairs,
+            Average Trade Size,
+            Average USD Gas Paid,
+            New Pairs Created,
+            Total USD Gas Paid,
+            Total USD Trading Volume,
+            Traders,
+            Trades,
+        ],
+
+        Funnel Count: [Addresses],
+
+        Max: [
+            Date,
+            Gas Paid Native,
+            Latency in Minutes All Chains,
+            Latency in Minutes Now,
+            USD Liquidity Added,
+            USD Liquidity Removed,
+            USD Trade Size,
+        ],
+
+        Median: [
+            Gas Paid Native,
+            Gas Paid USD,
+            USD Liquidity Added,
+            USD Liquidity Removed,
+            USD Trade Size,
+        ],
+
+        Min: [
+            Gas Paid Native,
+            Gas Paid USD,
+            USD Liquidity Added,
+            USD Liquidity Removed,
+            USD Trade Size,
+        ],
+
+        Monthly Growth: [
+            Active Pairs,
+            Average Trade Size,
+            Average USD Gas Paid,
+            New Pairs Created,
+            Total USD Gas Paid,
+            Total USD Trading Volume,
+            Traders,
+            Trades,
+        ],
+
+        Moving Average 30 Day: [
+            Active Pairs,
+            Average Trade Size,
+            Average USD Gas Paid,
+            New Pair Created,
+            Total USD Gas Paid,
+            Total USD Trading Volume,
+            Traders,
+            Trades,
+        ],
+
+        Moving Average 7 Day: [
+            Active Pairs,
+            Average Trade Size,
+            Average USD Gas Paid,
+            New Pair Created,
+            Total USD Gas Paid,
+            Total USD Trading Volume,
+            Traders,
+            Transaction Count,
+        ],
+
+        Percentage: [
+            Traders Using Aggregators,
+            Traders Through Aggregators,
+        ],
+
+        Ratios: [
+            Aggregators Used Per Trade,
+            Days Active Per Active Address,
+            Days Active Per Trader,
+            DEXs Used Per Trader,
+            Net Liquidity Added,
+            Pairs Traded Per Trader,
+            Stickiness Ratio,
+            Trades Per Trader,
+            Trades Per Transaction,
+            USD Gas Paid Per Trader,
+            Volume Per Trader,
+        ],
+
+        Total: [
+            Gas Paid Native,
+            Total Gas Paid USD,
+            USD Aggregator Valume,
+            USD Buying Volume,
+            USD Liquidity Added,
+            USD Liquidity Removed,
+            USD Net Liquidity Added,
+            USD Net Trading Volume,
+            USD Selling Volume,
+            USD Trading Volume,
+        ],
+    }
+}
 
 ## Futures
 ```shell
